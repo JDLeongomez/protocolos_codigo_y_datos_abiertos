@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   version="1.0"
+   id="Layer_1"
+   width="500"
+   height="500"
+   viewBox="0 0 40 40"
+   enable-background="new 0 0 64 64"
+   xml:space="preserve"
+   sodipodi:docname="presentation_icon.svg"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs5" /><sodipodi:namedview
+   id="namedview5"
+   pagecolor="#ffffff"
+   bordercolor="#000000"
+   borderopacity="0.25"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   inkscape:zoom="0.565"
+   inkscape:cx="562.83186"
+   inkscape:cy="527.43363"
+   inkscape:window-width="1140"
+   inkscape:window-height="1022"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="g4" />
+<g
+   id="g5"
+   transform="translate(12.941164,145.61373)">
+	
+	<g
+   id="g4">
+		
+		
+		
+		<g
+   id="g7"
+   transform="matrix(0.4694298,0,0,0.4694298,-6.8661962,-77.258306)"><circle
+     style="fill:#f9f9f9;fill-opacity:1;stroke:#1a1a1a;stroke-width:1.52834;stroke-linecap:round"
+     id="path5"
+     cx="29.663715"
+     cy="-103.00885"
+     r="41.84071" /><g
+     id="g6"
+     transform="translate(-2.3362846,-128.92793)"><rect
+       x="8"
+       y="7.9980001"
+       fill="#F9EBB2"
+       width="48"
+       height="32"
+       id="rect1"
+       style="fill:#1d7088;fill-opacity:1" /><path
+       fill="#394240"
+       d="M 60,-0.002 H 4 c -2.211,0 -4,1.789 -4,4 v 40 c 0,2.211 1.789,4 4,4 h 18.312 l -5.777,10 c -1.105,1.914 -0.449,4.359 1.465,5.465 1.914,1.106 4.359,0.449 5.465,-1.465 l 8.086,-14 h 0.898 l 8.086,14 c 1.105,1.914 3.551,2.57 5.465,1.465 1.914,-1.105 2.57,-3.551 1.461,-5.465 l -5.777,-10 H 60 c 2.211,0 4,-1.789 4,-4 v -40 c 0,-2.211 -1.789,-4 -4,-4 z m -4,40 H 8 v -32 h 48 z"
+       id="path1"
+       style="fill:#1a1a1a" /><rect
+       x="28"
+       y="19.997999"
+       fill="#394240"
+       width="8"
+       height="16"
+       id="rect2"
+       style="fill:#999999" /><rect
+       x="16"
+       y="27.997999"
+       fill="#394240"
+       width="8"
+       height="8"
+       id="rect3"
+       style="fill:#333333" /><rect
+       x="40"
+       y="11.998"
+       fill="#394240"
+       width="8"
+       height="24"
+       id="rect4"
+       style="fill:#ececec" /></g></g>
+	</g>
+</g>
+</svg>

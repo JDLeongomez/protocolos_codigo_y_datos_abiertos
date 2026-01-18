@@ -1,0 +1,427 @@
+---
+# Metadatos
+title: "Diseño de protocolos, códigos y datos abiertos"
+subtitle: <a href="https://atc26.com/programa-dia2-conferencia1.html"  target="_blank">Abre tu Ciencia</a>
+format: clean-revealjs
+author:
+  - name: <a href="https://jdleongomez.info/es/" target="_blank">Juan David Leongómez</a>
+    orcid: 0000-0002-0092-6298
+    email: jleongomez@unbosque.edu.co
+    affiliations: <a href="https://www.unbosque.edu.co" target="_blank">
+        <img src="images/logo_UEB.svg"
+             alt="Logo Universidad El Bosque"
+             style="height:60px; vertical-align:middle;">
+      </a> <br>
+      &nbsp;&nbsp;
+      <a href="https://rr.peercommunityin.org" target="_blank">
+        <span style="font-size:70%; opacity:0.8;">
+          &nbsp;Recommender
+        </span>
+        <img src="images/logo_PCI-RR.png"
+             alt="Logo PCI Registered Reports"
+             style="height:30px; vertical-align:middle;">
+      </a>
+      &nbsp;&nbsp;
+      <a href="https://royalsocietypublishing.org/rspb" target="_blank">
+        <span style="font-size:70%; opacity:0.8;">
+          &nbsp;Data Editor
+        </span>
+        <img src="images/logo_Proc-B.png"
+             alt="Logo Proceedings B"
+             style="height:30px; vertical-align:middle;">
+      </a>
+      
+# Fecha      
+date: 2026-01-23
+
+# Configuración
+lang: es
+transition: fade
+slide-number: true
+incremental: true
+logo: images/logos.png
+footer: |
+      <span style="font-size:90%;"><a href="https://jdleongomez.info/es/" target="_blank">
+      <strong>Juan David Leongómez</strong></a></span>
+      <span style="font-size:50%;">PhD, MSc</span>
+---
+
+## 📲 Accede a las diapositivas en línea
+
+[![](images/presentacion_QR.svg){fig-align="left" width="50%"}](https://jdleongomez.github.io/protocolos_codigo_y_datos_abiertos/)
+
+::: {.aside .center}
+![](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg){width="22" style="vertical-align:middle; margin-right:.35em;"}Materiales (incluyendo imágenes y código) disponibles en [GitHub](https://github.com/JDLeongomez/protocolos_codigo_y_datos_abiertos)
+:::
+
+---
+
+## Apertura  {auto-animate="true"}
+
+### Principios FAIR para datos de investigación
+
+| Principio | Qué significa | En la práctica |
+|---------|---------------|----------------|
+| **F – Findable** | Los datos pueden localizarse fácilmente | Identificador persistente (DOI), metadatos claros, repositorios indexados |
+| **A – Accessible** | Los datos se pueden descargar o consultar | Enlace funcional, permisos explícitos, acceso estable |
+| **I – Interoperable** | Los datos pueden combinarse con otros | Formatos abiertos y legibles por máquina (CSV, JSON), vocabularios estándar |
+| **R – Reusable** | Los datos pueden reutilizarse | Licencia clara (p. ej., CC-BY), documentación suficiente |
+
+
+---
+
+## Apertura  {auto-animate="true"}
+
+### La situación: Datos abiertos
+
+```{r}
+#| label: tbl-datos-abiertos-doi
+#| echo: false
+#| warning: false
+#| message: false
+#| error: false
+
+library(tibble)
+library(dplyr)
+library(readr)
+library(commonmark)
+library(DT)
+
+df_datos_abiertos <- tribble(
+  ~Contexto, ~`% datos abiertos`, ~Citas, ~nota,
+  "Alto impacto (2009)", "9 %",
+  "[Alsheikh-Ali et al., 2011](http://dx.doi.org/10.1371/journal.pone.0024357)",
+  "Solo 9 % depositaron todos los datos primarios en abierto.",
+
+  "Biomedicina (2015–2017)", "18 %",
+  "[Wallach et al., 2018](http://dx.doi.org/10.1371/journal.pbio.2006930)",
+  "18 % mencionaron datos públicos; solo 1 % enlazó al protocolo completo.",
+
+  "Oncología (2019)", "16 %; <1 % FAIR",
+  "[Hamilton et al., 2022](http://dx.doi.org/10.1186/s12916-022-02644-2)",
+  "<1 % cumplía principios FAIR (identificador, licencia, formato reutilizable).",
+
+  "Neurociencias (2016–2018)", "6.9 %",
+  "[Hanson et al., 2020](http://dx.doi.org/10.7759/cureus.9927)",
+  "41 % incluían datos fuente en el artículo; solo 6.9 % accesibles externamente.",
+
+  "Psicología (Reportes Registrados)", "58 %",
+  "[Obels et al., 2019](http://dx.doi.org/10.1177/2515245920918872)",
+  "58 % compartieron datos y código."
+) |>
+  mutate(
+    Citas = vapply(Citas, commonmark::markdown_html, character(1)),
+    pct_num = parse_number(`% datos abiertos`),
+    Contexto = paste0(
+      Contexto,
+      ' <span title="', nota,
+      '" style="cursor: help; color: #1f77b4;">🛈︎</span>'
+    )
+  )
+
+datatable(
+  df_datos_abiertos |> select(-nota),
+  rownames = FALSE,
+  escape = FALSE,
+  options = list(
+    paging = FALSE,
+    searching = FALSE,
+    ordering = FALSE,
+    info = FALSE,
+    dom = "t",
+    columnDefs = list(
+      list(targets = 3, visible = FALSE)  # pct_num
+    )
+  ),
+  class = "compact"
+) |>
+  formatStyle(
+    "% datos abiertos",
+    valueColumns = "pct_num",
+    textAlign = "center",
+    fontWeight = "bold",
+    color = styleInterval(
+      c(10, 30),
+      c("#b2182b", "#ef8a62", "#1a9850")
+    )
+  )
+```
+  
+## Apertura  {auto-animate="true"}
+
+### La situación: Cumplimiento FAIR reciente por área
+  
+```{r}
+#| label: tbl-cumplimiento-fair-doi
+#| echo: false
+#| warning: false
+#| message: false
+#| error: false
+
+df_cumplimiento_fair <- tribble(
+  ~Contexto, ~`% cumplimiento`, ~Citas, ~nota,
+
+  "COVID-19, repositorios",
+  paste0(
+    "Findable: <span style='color:#1a9850;font-weight:bold;'>100 %</span><br>",
+    "Accessible: <span style='color:#b2182b;font-weight:bold;'>21.5 %</span><br>",
+    "Interoperable: <span style='color:#ef8a62;font-weight:bold;'>46.7 %</span><br>",
+    "Reusable: <span style='color:#1a9850;font-weight:bold;'>61.3 %</span>"
+  ),
+  "[Sofi-Mahmudi et al., 2023](http://dx.doi.org/10.1371/journal.pone.0313991)",
+  "5.700 conjuntos de datos en repositorios generales; cumplimiento medio ≈ 9,4/22 puntos.",
+
+  "Odontología (2016–2021)",
+  paste0(
+    "<span style='color:#b2182b;font-weight:bold;'>1.5 %</span> comparten datos<br>",
+    "FAIR global ≈ <span style='color:#ef8a62;font-weight:bold;'>32.6 %</span>"
+  ),
+  "[Uribe et al., 2022](http://dx.doi.org/10.1177/00220345221101321)",
+  "Interoperabilidad y reusabilidad fueron las dimensiones más débiles.",
+
+  "Adicciones",
+  paste0(
+    "FAIR global: <span style='color:#b2182b;font-weight:bold;'>20–29 %</span><br>",
+    "Findable: <span style='color:#ef8a62;font-weight:bold;'>40–59 %</span><br>",
+    "A, I, R < <span style='color:#b2182b;font-weight:bold;'>40 %</span>"
+  ),
+  "[Sixto-Costoya et al., 2025](http://dx.doi.org/10.1007/s11192-024-05227-5)",
+  "Ningún ningún tema (alcohol, tabaco, opioides, etc.) superó 30 % de cumplimiento FAIR.",
+
+  "Datos educativos LATAM",
+  paste0(
+    "Findable: <span style='color:#1a9850;font-weight:bold;'>≈50 %</span><br>",
+    "Accessible: <span style='color:#ef8a62;font-weight:bold;'>≈33 %</span><br>",
+    "I / R: <span style='color:#b2182b;font-weight:bold;'>&lt;50 %</span>"
+  ),
+  "[Soto Ruidias et al., 2025](http://dx.doi.org/10.18608/jla.2025.8441)",
+  "Brasil, Colombia y Perú."
+) |>
+  mutate(
+    Citas = vapply(Citas, commonmark::markdown_html, character(1)),
+    Contexto = paste0(
+      Contexto,
+      ' <span title="', nota,
+      '" style="cursor: help; color:#1f77b4;">🛈︎</span>'
+    )
+  )
+
+datatable(
+  df_cumplimiento_fair |> select(-nota),
+  rownames = FALSE,
+  escape = FALSE,
+  options = list(
+    paging = FALSE,
+    searching = FALSE,
+    ordering = FALSE,
+    info = FALSE,
+    dom = "t"
+  ),
+  class = "compact"
+) |>
+  formatStyle(
+    columns = names(df_cumplimiento_fair |> select(-nota)),
+    fontSize = "20px"
+  )
+
+```
+  
+  
+---
+
+### El problema real
+
+- La apertura suele hacerse **al final**
+- Protocolos implícitos
+- Código frágil o irreproducible
+- Datos públicos pero inutilizables
+
+---
+
+## Diagnóstico
+
+> FAIR no falla por falta de buena voluntad,  
+> sino por **mal diseño inicial**
+
+---
+
+## Idea central
+
+### Abrir no es publicar al final
+
+- La apertura es una **decisión de diseño**
+- Afecta cómo:
+  - pensamos el estudio
+  - analizamos los datos
+  - comunicamos resultados
+
+---
+
+## Protocolos abiertos
+
+### ¿Qué es realmente un protocolo?
+
+- No es solo un preregistro
+- Es un **contrato metodológico**
+- Define:
+  - qué cuenta como dato
+  - qué análisis son válidos
+  - qué decisiones se permiten
+
+---
+
+## Protocolos bien diseñados
+
+- Decisiones explícitas
+- Separar:
+  - teoría
+  - técnica
+- Versionado
+- Trazabilidad de cambios
+
+---
+
+## Protocolos y FAIR
+
+- **Findable**: existe y se puede localizar
+- **Reusable**: se entiende por qué se decidió lo que se decidió
+
+---
+
+## Código abierto
+
+### Código abierto ≠ subir scripts
+
+- El código es **parte del método**
+- Código sin estructura ≠ transparencia
+
+---
+
+## Buenas prácticas mínimas
+
+- Un script = una tarea clara
+- Separar:
+  - datos crudos
+  - datos procesados
+  - análisis
+- README explicativo
+- Flujo ejecutable
+
+---
+
+## Código ejecutable
+
+> El código no se abre para ser leído,  
+> se abre para ser ejecutado
+
+- Punto de entrada claro
+- Sin pasos manuales ocultos
+- Rutas relativas
+- Automatización mínima
+
+---
+
+## Datos abiertos
+
+### Abrir sin dañar
+
+- Privacidad
+- Consentimiento
+- Poblaciones vulnerables
+- Datos sensibles
+
+---
+
+## Datos *machine-readable*
+
+### Qué significa
+
+- Interpretables automáticamente
+- Sin decisiones humanas implícitas
+- Estructura clara:
+  - filas = observaciones
+  - columnas = variables
+
+---
+
+## Excel vs CSV
+
+### El problema no es Excel, es el diseño
+
+Excel permite:
+- celdas fusionadas
+- múltiples encabezados
+- formato visual
+- ambigüedad estructural
+
+---
+
+## CSV como decisión de diseño
+
+- Formato abierto
+- Sin elementos visuales
+- Estructura tabular explícita
+- Previene errores antes de que ocurran
+
+> La estética no es metadato
+
+---
+
+## FAIR y datos
+
+- **Accessible** ≠ “abre en mi computador”
+- **Interoperable** ≠ “yo sé cómo leerlo”
+- **Reusable** requiere contexto y estructura
+
+---
+
+## Proc B como ejemplo
+
+### No como revista, sino como modelo
+
+- Datos, código y README son **evaluables**
+- Reproducibilidad computacional mínima
+- Excepciones éticas explícitas
+- Documentación central
+
+---
+
+## El rol del README
+
+- Más importante que el archivo de datos
+- Conecta:
+  - protocolo
+  - datos
+  - código
+- Permite reutilización real
+
+---
+
+## Reproducibilidad razonable
+
+> No es replicación total  
+> es **ejecución sin fricción**
+
+- El código corre
+- Los datos cargan
+- El flujo tiene sentido
+
+---
+
+## Cierre
+
+### Una regla simple
+
+> Si no entiendo mi propio proyecto en 6 meses  
+> sin explicaciones extra, no está listo para ser abierto
+
+---
+
+## Mensaje final
+
+La ciencia abierta no es un requisito administrativo  
+es **infraestructura intelectual**
+
+---
+
+## Preguntas
