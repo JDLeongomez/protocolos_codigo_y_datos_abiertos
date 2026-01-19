@@ -1,7 +1,7 @@
 ---
 # Metadatos
 title: "Diseño de protocolos, códigos y datos abiertos"
-subtitle: <a href="https://atc26.com/programa-dia2-conferencia1.html"  target="_blank">Abre tu Ciencia</a>
+subtitle: Workshop <a href="https://atc26.com/programa-dia2-conferencia1.html"  target="_blank">Abre tu Ciencia</a>
 format: clean-revealjs
 author:
   - name: <a href="https://jdleongomez.info/es/" target="_blank">Juan David Leongómez</a>
