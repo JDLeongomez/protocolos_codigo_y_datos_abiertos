@@ -1,0 +1,23 @@
+https://consensus.app/search/importancia-de-principios-fair/AC9Z8MAzQb2IF-xPlhFP6A/
+
+
+[1] [Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18)
+[2] [Inau et al., 2022](https://doi.org/10.2196/45013)
+[3] [Castro & Aguiar, 2023](https://doi.org/10.5753/sbbd.2023.232494)
+[4] [Inau et al., 2020](https://doi.org/10.2196/22505)
+[5] [Rocca-Serra et al., 2023](https://doi.org/10.1038/s41597-023-02166-3)
+[6] [Tai et al., 2025](https://doi.org/10.1016/j.jclinepi.2025.111920)
+[7] [McQuilton et al., 2020](https://doi.org/10.1162/dint_a_00037)
+[8] [Bhat & Wani, 2024](https://doi.org/10.1177/03400352241270692)
+[9] [Boeckhout et al., 2018](https://doi.org/10.1038/s41431-018-0160-0)
+[10] [Götz, 2023](https://doi.org/10.56367/oag-039-10749)
+[11] [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030)
+[12] [Huerta et al., 2022](https://doi.org/10.1038/s41597-023-02298-6)
+[13] [Kinkade & Shepherd, 2021](https://doi.org/10.1002/gdj3.120)
+[14] [Stracke & Evans, 2024](https://doi.org/10.1038/s42004-024-01143-0)
+[15] [Jacobsen et al., 2020](https://doi.org/10.1162/dint_r_00024)
+[16] [Inau et al., 2020](https://doi.org/10.2196/preprints.22505)
+[17] [Martorana et al., 2022](https://doi.org/10.7717/peerj-cs.1038)
+[18] [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008)
+[19] [Juty et al., 2020](https://doi.org/10.1162/dint_a_00025)
+[20] [Vesteghem et al., 2019](https://doi.org/10.1093/bib/bbz044)

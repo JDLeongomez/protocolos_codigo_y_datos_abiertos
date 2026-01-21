@@ -1,0 +1,7 @@
+/* CSS personalizado para Reveal.js */
+
+.reveal .citas {
+  font-size: 0.7em;
+  opacity: 0.8;
+  line-height: 1.2;
+}
