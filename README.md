@@ -49,20 +49,27 @@ quarto render index.qmd
 ## 🗂️ Estructura del repositorio
 
 ```text
-├── index.qmd            # Fuente principal de la presentación
-├── index.html           # Versión renderizada
-├── css/                 # Estilos personalizados
-├── images/              # Imágenes usadas en las diapositivas
-├── _extensions/         # Extensiones de Quarto (clean-revealjs)
-├── index_files/         # Dependencias HTML generadas automáticamente
-├── mathjax-config.js    # Configuración matemática
-└── README.md            # Este archivo
+├── index.qmd                                 # Fuente principal de la presentación (Quarto)
+├── index.html                                # Presentación renderizada (Reveal.js)
+├── index_files/                              # Dependencias HTML generadas automáticamente
+├── css/                                      # Estilos personalizados
+├── images/                                   # Imágenes usadas en las diapositivas
+├── _extensions/                              # Extensiones de Quarto (clean-revealjs)
+├── mathjax-config.js                         # Configuración de MathJax
+├── protocolos_codigo_y_datos_abiertos.Rproj  # Proyecto RStudio
+├── README.md                                 # Descripción y guía del repositorio
+├── README.html                               # Versión renderizada del README
+├── LICENSE                                   # Licencia del contenido (CC BY 4.0)
+├── CITATION.cff                              # Información de citación (FAIR)
+├── CODE_OF_CONDUCT.md                        # Código de conducta
+└── CONTRIBUTING.md                           # Guía mínima de contribución
 ```
 
-Notas importantes:
-- index.qmd es el archivo fuente principal.
-- index.html e index_files/ son archivos generados automáticamente.
-- Para modificar el contenido, edite únicamente index.qmd.
+Notas:
+- `index.qmd` es el único archivo que debe editarse para cambiar el contenido.
+- `index.html`, `index_files/` y `README.html` son archivos generados automáticamente.
+- Los archivos `LICENSE`, `CITATION.cff`, `CODE_OF_CONDUCT.md` y
+  `CONTRIBUTING.md` ilustran buenas prácticas de ciencia abierta.
 
 ## 🔄 Estado del proyecto
 
@@ -82,11 +89,10 @@ No se esperan contribuciones directas, pero eres libre de:
 
 Si encuentras errores o deseas comentar algo, puedes abrir un issue.
 
-## 📜 Licencia
+## 📎 Información adicional
 
-El contenido se distribuye bajo licencia Creative Commons Attribution 4.0 (CC BY 4.0), salvo que se indique lo contrario.
-
-Puedes reutilizarlo citando la fuente.
+Este repositorio incluye una licencia abierta (CC BY 4.0), un código de conducta
+y una guía mínima de citación y reutilización.
 
 ## 👤 Autor
 

@@ -65,7 +65,7 @@ footer: |
 
 
 
-# [Parte 1 · Apertura]{auto-animate="true"}
+# [Parte 1 · Marco y diagnóstico]{auto-animate="true"}
 
 ---
 
@@ -307,11 +307,11 @@ Además, gran parte del ecosistema de investigación está marcado por:
 
 
 
-# [Parte 2 · Aplicación]{auto-animate="true"}
+# [Parte 2 · Diseño y aplicación práctica]{auto-animate="true"}
 
 ---
 
-## 2.1 ¿Tu protocolo es FAIR? {auto-animate="true"}
+## 2.1 Lista de chequeo FAIR con ejemplos prácticos {auto-animate="true"}
 
 ::: {.small-list .incremental}
 - [ ] [Planificación FAIR desde el diseño del estudio]{auto-animate="true"} [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Martorana et al., 2022](https://doi.org/10.7717/peerj-cs.1038))]{.small}  
@@ -330,7 +330,7 @@ Además, gran parte del ecosistema de investigación está marcado por:
 
 ---
 
-## 2.1 ¿Tu protocolo es FAIR? {auto-animate="true" .unlisted}
+## 2.1 Lista de chequeo FAIR con ejemplos prácticos {auto-animate="true" .unlisted}
 
 ::: {.small-list}
 - [ ] [Planificación FAIR desde el diseño del estudio]{auto-animate="true"} [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Martorana et al., 2022](https://doi.org/10.7717/peerj-cs.1038))]{.small}  
@@ -371,7 +371,7 @@ Referencias
 
 ---
 
-## 2.1 ¿Tu protocolo es FAIR? {auto-animate="true" .unlisted}
+## 2.1 Lista de chequeo FAIR con ejemplos prácticos {auto-animate="true" .unlisted}
 
 ::: {.small-list}
 - [ ] [Planificación FAIR desde el diseño del estudio]{auto-animate="true"} [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Martorana et al., 2022](https://doi.org/10.7717/peerj-cs.1038))]{.small}  
@@ -391,7 +391,7 @@ Referencias
 
 ---
 
-## 2.1 ¿Tu protocolo es FAIR? {auto-animate="true" .unlisted}
+## 2.1 Lista de chequeo FAIR con ejemplos prácticos {auto-animate="true" .unlisted}
 
 ::: {.small-list}
 - [x] [Planificación FAIR desde el diseño del estudio]{auto-animate="true"} [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Martorana et al., 2022](https://doi.org/10.7717/peerj-cs.1038))]{.small}  
@@ -410,7 +410,7 @@ Referencias
 
 ---
 
-## 2.1 ¿Tu protocolo es FAIR? {auto-animate="true" .unlisted}
+## 2.1 Lista de chequeo FAIR con ejemplos prácticos {auto-animate="true" .unlisted}
 
 ::: {.small-list}
 - [ ] Metadatos obligatorios y estándares definidos [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
@@ -432,7 +432,7 @@ Referencias
 
 ---
 
-## 2.1 ¿Tu protocolo es FAIR? {auto-animate="true" .unlisted}
+## 2.1 Lista de chequeo FAIR con ejemplos prácticos {auto-animate="true" .unlisted}
 
 ::: {.small-list}
 - [x] [Planificación FAIR desde el diseño del estudio]{auto-animate="true"} [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Martorana et al., 2022](https://doi.org/10.7717/peerj-cs.1038))]{.small}  
@@ -451,7 +451,7 @@ Referencias
 
 ---
 
-## 2.1 ¿Tu protocolo es FAIR? {auto-animate="true" .unlisted}
+## 2.1 Lista de chequeo FAIR con ejemplos prácticos {auto-animate="true" .unlisted}
 
 ::: {.small-list}
 - [x] [Planificación FAIR desde el diseño del estudio]{auto-animate="true"} [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Martorana et al., 2022](https://doi.org/10.7717/peerj-cs.1038))]{.small}  
@@ -470,7 +470,7 @@ Referencias
 
 ---
 
-## 2.1 ¿Tu protocolo es FAIR? {auto-animate="true" .unlisted}
+## 2.1 Lista de chequeo FAIR con ejemplos prácticos {auto-animate="true" .unlisted}
 
 ::: {.small-list}
 - [x] [Planificación FAIR desde el diseño del estudio]{auto-animate="true"} [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Martorana et al., 2022](https://doi.org/10.7717/peerj-cs.1038))]{.small}  
@@ -489,7 +489,7 @@ Referencias
 
 ---
 
-## 2.1 ¿Tu protocolo es FAIR? {auto-animate="true" .unlisted}
+## 2.1 Lista de chequeo FAIR con ejemplos prácticos {auto-animate="true" .unlisted}
 
 ::: {.small-list}
 - [ ] Uso de formatos abiertos y estructurados [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
@@ -519,7 +519,7 @@ Excel permite:
 
 ---
 
-## 2.1 ¿Tu protocolo es FAIR? {auto-animate="true" .unlisted}
+## 2.1 Lista de chequeo FAIR con ejemplos prácticos {auto-animate="true" .unlisted}
 
 ::: {.small-list}
 - [ ] Uso de formatos abiertos y estructurados [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
@@ -556,7 +556,7 @@ CSV es:
 
 ---
 
-## 2.1 ¿Tu protocolo es FAIR? {auto-animate="true" .unlisted}
+## 2.1 Lista de chequeo FAIR con ejemplos prácticos {auto-animate="true" .unlisted}
 
 ::: {.small-list}
 - [ ] Uso de formatos abiertos y estructurados [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
@@ -586,7 +586,7 @@ CSV es:
 
 ---
 
-## 2.1 ¿Tu protocolo es FAIR? {auto-animate="true" .unlisted}
+## 2.1 Lista de chequeo FAIR con ejemplos prácticos {auto-animate="true" .unlisted}
 
 ::: {.small-list}
 - [ ] Uso de formatos abiertos y estructurados [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
@@ -616,7 +616,7 @@ CSV es:
 
 ---
 
-## 2.1 ¿Tu protocolo es FAIR? {auto-animate="true" .unlisted}
+## 2.1 Lista de chequeo FAIR con ejemplos prácticos {auto-animate="true" .unlisted}
 
 ::: {.small-list}
 - [x] [Planificación FAIR desde el diseño del estudio]{auto-animate="true"} [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Martorana et al., 2022](https://doi.org/10.7717/peerj-cs.1038))]{.small}  
@@ -635,7 +635,7 @@ CSV es:
 
 ---
 
-## 2.1 ¿Tu protocolo es FAIR? {auto-animate="true" .unlisted}
+## 2.1 Lista de chequeo FAIR con ejemplos prácticos {auto-animate="true" .unlisted}
 
 ::: {.small-list}
 - [x] [Planificación FAIR desde el diseño del estudio]{auto-animate="true"} [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Martorana et al., 2022](https://doi.org/10.7717/peerj-cs.1038))]{.small}  
@@ -737,13 +737,18 @@ CSV es:
 
 ---
 
-## 2.4 Ejemplos repositorios FAIR
+## 2.4 Ejemplos de repositorios FAIR
 
-GitHub no tiene DOIs, pero los repositorios se pueden vincular a Zenodo o OSF para asignarles un DOI
+> Este repositorio aplica lo que predica 😇 [(de manera exagerada)]{.small}  
+> [(<https://github.com/JDLeongomez/protocolos_codigo_y_datos_abiertos>)]{.small}
 
-<https://github.com/Deltares-research/FAIR-data-example-project>
+- GitHub no asigna DOIs  
+- Zenodo / OSF permiten archivar versiones y asignar DOI
 
-**Plantilla para GitHub:** <https://github.com/maehr/open-research-data-template>
+**Otros ejemplos:**
+
+- Demo project FAIR-data [(<https://github.com/Deltares-research/FAIR-data-example-project>)]{.small}  
+- Demo project FAIR-data [(<https://github.com/maehr/open-research-data-template>)]{.small}  
 
 ---
 
