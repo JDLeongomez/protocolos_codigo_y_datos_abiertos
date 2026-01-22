@@ -28,6 +28,72 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-5ae9c59b2727fcd5357d4f034d95f9e0.css">
   <link rel="stylesheet" href="css/reveal-custom.css">
@@ -161,12 +227,26 @@
 <nav role="doc-toc"> 
 <h2 id="toc-title">Tabla de contenidos</h2>
 <ul>
-<li class="fragment"><a href="#/parte-1-apertura" id="/toc-parte-1-apertura"><span data-auto-animate="true">Parte 1 · Apertura</span></a></li>
-<li class="fragment"><a href="#/parte-2-idea-central" id="/toc-parte-2-idea-central"><span data-auto-animate="true">Parte 2 · Idea central</span></a></li>
+<li><a href="#/parte-1-apertura" id="/toc-parte-1-apertura"><span data-auto-animate="true">Parte 1 · Apertura</span></a>
+<ul>
+<li><a href="#/principios-fair" id="/toc-principios-fair">1.1 Principios FAIR</a></li>
+<li><a href="#/principios-fair-beneficios-científicos-y-técnicos" id="/toc-principios-fair-beneficios-científicos-y-técnicos">1.2 Principios FAIR: beneficios científicos y técnicos</a></li>
+<li><a href="#/principios-fair-beneficios-organizacionales-y-estratégicos" id="/toc-principios-fair-beneficios-organizacionales-y-estratégicos">1.3 Principios FAIR: beneficios organizacionales y estratégicos</a></li>
+<li><a href="#/la-situación-datos-abiertos" id="/toc-la-situación-datos-abiertos">1.4 La situación: Datos abiertos</a></li>
+<li><a href="#/la-situación-cumplimiento-fair-reciente-por-área" id="/toc-la-situación-cumplimiento-fair-reciente-por-área">1.5 La situación: Cumplimiento FAIR reciente por área</a></li>
+<li><a href="#/el-problema-real" id="/toc-el-problema-real">1.6 El problema real</a></li>
+</ul></li>
+<li><a href="#/parte-2-aplicación" id="/toc-parte-2-aplicación"><span data-auto-animate="true">Parte 2 · Aplicación</span></a>
+<ul>
+<li><a href="#/tu-protocolo-es-fair" id="/toc-tu-protocolo-es-fair">2.1 ¿Tu protocolo es FAIR?</a></li>
+<li><a href="#/proc-b-como-ejemplo" id="/toc-proc-b-como-ejemplo">2.2 Proc B como ejemplo</a></li>
+<li><a href="#/recomendaciones-generales" id="/toc-recomendaciones-generales">2.3 Recomendaciones generales</a></li>
+<li><a href="#/gracias" id="/toc-gracias">¡Gracias!</a></li>
+</ul></li>
 </ul>
 </nav>
 </section>
-<section id="accede-a-las-diapositivas-en-línea" class="slide level2 center">
+<section id="accede-a-las-diapositivas-en-línea" class="slide level2 unlisted center">
 <h2>📲 Accede a las diapositivas en línea</h2>
 <div class="quarto-figure quarto-figure-left">
 <figure>
@@ -224,19 +304,19 @@
 <section id="principios-fair-beneficios-científicos-y-técnicos" class="slide level2 center" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">1.2 Principios FAIR: beneficios científicos y técnicos</h2>
 <ul>
-<li class="fragment"><p>Aumentan la reutilización y el impacto de los datos por humanos y máquinas (<a href="https://doi.org/10.1038/sdata.2016.18">Wilkinson et al., 2016</a>; <a href="https://doi.org/10.1016/j.drudis.2019.01.008">Wise et al., 2019</a>).</p></li>
-<li class="fragment"><p>Mejoran la localización y el acceso a datos distribuidos, facilitando la colaboración (<a href="https://doi.org/10.3389/fmars.2019.00440">Tanhua et al., 2019</a>).</p></li>
-<li class="fragment"><p>Refuerzan la reproducibilidad y verificabilidad de los resultados científicos (<a href="https://doi.org/10.56367/oag-039-10749">Götz, 2023</a>; <a href="https://doi.org/10.1038/sdata.2016.18">Wilkinson et al., 2016</a>).</p></li>
-<li class="fragment"><p>Habilitan el uso eficiente de IA y aprendizaje automático con datos bien descritos (<a href="https://doi.org/10.1016/j.drudis.2019.01.008">Wise et al., 2019</a>; <a href="https://doi.org/10.14229/onco.2023.08.29.001">Olsen, 2023</a>).</p></li>
+<li class="fragment"><p>Aumentan la reutilización y el impacto de los datos por humanos y máquinas <span class="small">(<a href="https://doi.org/10.1038/sdata.2016.18">Wilkinson et al., 2016</a>; <a href="https://doi.org/10.1016/j.drudis.2019.01.008">Wise et al., 2019</a>)</span>.</p></li>
+<li class="fragment"><p>Mejoran la localización y el acceso a datos distribuidos, facilitando la colaboración <span class="small">(<a href="https://doi.org/10.3389/fmars.2019.00440">Tanhua et al., 2019</a>)</span>.</p></li>
+<li class="fragment"><p>Refuerzan la reproducibilidad y verificabilidad de los resultados científicos <span class="small">(<a href="https://doi.org/10.56367/oag-039-10749">Götz, 2023</a>; <a href="https://doi.org/10.1038/sdata.2016.18">Wilkinson et al., 2016</a>)</span>.</p></li>
+<li class="fragment"><p>Habilitan el uso eficiente de IA y aprendizaje automático con datos bien descritos <span class="small">(<a href="https://doi.org/10.1016/j.drudis.2019.01.008">Wise et al., 2019</a>; <a href="https://doi.org/10.14229/onco.2023.08.29.001">Olsen, 2023</a>)</span>.</p></li>
 </ul>
 </section>
 <section id="principios-fair-beneficios-organizacionales-y-estratégicos" class="slide level2 center" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">1.3 Principios FAIR: beneficios organizacionales y estratégicos</h2>
 <ul>
-<li class="fragment"><p>Apoyan una gestión ética y responsable de los datos, en combinación con CARE<sup>1</sup> (<a href="https://doi.org/10.1038/s41597-021-00892-0">Carroll et al., 2021</a>)</p></li>
-<li class="fragment"><p>Reducen tiempos y costes en la gestión y el análisis de datos (<a href="https://doi.org/10.1016/j.heliyon.2023.e15733">Martínez-García et al., 2023</a>; <a href="https://doi.org/10.1016/j.drudis.2023.103510">Alharbi et al., 2023</a>).</p></li>
-<li class="fragment"><p>Favorecen la interoperabilidad entre dominios mediante estándares comunes (<a href="https://doi.org/10.3389/fmars.2019.00440">Tanhua et al., 2019</a>; <a href="https://doi.org/10.1016/j.compag.2024.109855">Krisnawijaya et al., 2025</a>).</p></li>
-<li class="fragment"><p>Sirven como marco estratégico para priorizar la FAIRificación y la preservación a largo plazo (<a href="https://doi.org/10.1038/sdata.2016.18">Wilkinson et al., 2016</a>).</p></li>
+<li class="fragment"><p>Apoyan una gestión ética y responsable de los datos, en combinación con CARE<sup>1</sup> <span class="small">(<a href="https://doi.org/10.1038/s41597-021-00892-0">Carroll et al., 2021</a>)</span>.</p></li>
+<li class="fragment"><p>Reducen tiempos y costes en la gestión y el análisis de datos <span class="small">(<a href="https://doi.org/10.1016/j.heliyon.2023.e15733">Martínez-García et al., 2023</a>; <a href="https://doi.org/10.1016/j.drudis.2023.103510">Alharbi et al., 2023</a>)</span>.</p></li>
+<li class="fragment"><p>Favorecen la interoperabilidad entre dominios mediante estándares comunes <span class="small">(<a href="https://doi.org/10.3389/fmars.2019.00440">Tanhua et al., 2019</a>; <a href="https://doi.org/10.1016/j.compag.2024.109855">Krisnawijaya et al., 2025</a>)</span>.</p></li>
+<li class="fragment"><p>Sirven como marco estratégico para priorizar la FAIRificación y la preservación a largo plazo <span class="small">(<a href="https://doi.org/10.1038/sdata.2016.18">Wilkinson et al., 2016</a>)</span>.</p></li>
 </ul>
 <aside><ol class="aside-footnotes"><li id="fn1"><p>CARE: marco para la gobernanza ética de los datos, complementario a FAIR, centrado en pueblos indígenas y comunidades históricamente marginadas.</p></li></ol></aside></section>
 <section id="la-situación-datos-abiertos" class="slide level2 center" data-auto-animate="true">
@@ -249,8 +329,8 @@ Tabla&nbsp;1
 </figcaption>
 <div aria-describedby="tbl-datos-abiertos-doi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-55ad564ff4839e5eaa48" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-55ad564ff4839e5eaa48">{"x":{"filter":"none","vertical":false,"data":[["Alto impacto (2009) <span title=\"Solo 9 % depositaron todos los datos primarios en abierto.\" style=\"cursor: help; color: #1f77b4;\">🛈︎<\/span>","Biomedicina (2015–2017) <span title=\"18 % mencionaron datos públicos; solo 1 % enlazó al protocolo completo.\" style=\"cursor: help; color: #1f77b4;\">🛈︎<\/span>","Oncología (2019) <span title=\"<1 % cumplía principios FAIR (identificador, licencia, formato reutilizable).\" style=\"cursor: help; color: #1f77b4;\">🛈︎<\/span>","Neurociencias (2016–2018) <span title=\"41 % incluían datos fuente en el artículo; solo 6.9 % accesibles externamente.\" style=\"cursor: help; color: #1f77b4;\">🛈︎<\/span>","Psicología (Reportes Registrados) <span title=\"58 % compartieron datos y código.\" style=\"cursor: help; color: #1f77b4;\">🛈︎<\/span>"],["9 %","18 %","16 %; <1 % FAIR","6.9 %","58 %"],["<p><a href=\"http://dx.doi.org/10.1371/journal.pone.0024357\">Alsheikh-Ali et al., 2011<\/a><\/p>\n","<p><a href=\"http://dx.doi.org/10.1371/journal.pbio.2006930\">Wallach et al., 2018<\/a><\/p>\n","<p><a href=\"http://dx.doi.org/10.1186/s12916-022-02644-2\">Hamilton et al., 2022<\/a><\/p>\n","<p><a href=\"http://dx.doi.org/10.7759/cureus.9927\">Hanson et al., 2020<\/a><\/p>\n","<p><a href=\"http://dx.doi.org/10.1177/2515245920918872\">Obels et al., 2019<\/a><\/p>\n"],[9,18,16,6.9,58]],"container":"<table class=\"compact\">\n  <thead>\n    <tr>\n      <th>Contexto<\/th>\n      <th>% datos abiertos<\/th>\n      <th>Citas<\/th>\n      <th>pct_num<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"paging":false,"searching":false,"ordering":false,"info":false,"dom":"t","columnDefs":[{"targets":3,"visible":false},{"className":"dt-right","targets":3},{"name":"Contexto","targets":0},{"name":"% datos abiertos","targets":1},{"name":"Citas","targets":2},{"name":"pct_num","targets":3}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[3]; $(this.api().cell(row, 1).node()).css({'font-weight':'bold','color':isNaN(parseFloat(value)) ? '' : value <= 10 ? \"#b2182b\" : value <= 30 ? \"#ef8a62\" : \"#1a9850\",'text-align':'center'});\n}"}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-18dd8f5bd48b7daf0385" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-18dd8f5bd48b7daf0385">{"x":{"filter":"none","vertical":false,"data":[["Alto impacto (2009) <span title=\"Solo 9 % depositaron todos los datos primarios en abierto.\" style=\"cursor: help; color: #1f77b4;\">🛈︎<\/span>","Biomedicina (2015–2017) <span title=\"18 % mencionaron datos públicos; solo 1 % enlazó al protocolo completo.\" style=\"cursor: help; color: #1f77b4;\">🛈︎<\/span>","Oncología (2019) <span title=\"<1 % cumplía principios FAIR (identificador, licencia, formato reutilizable).\" style=\"cursor: help; color: #1f77b4;\">🛈︎<\/span>","Neurociencias (2016–2018) <span title=\"41 % incluían datos fuente en el artículo; solo 6.9 % accesibles externamente.\" style=\"cursor: help; color: #1f77b4;\">🛈︎<\/span>","Psicología (Reportes Registrados) <span title=\"58 % compartieron datos y código.\" style=\"cursor: help; color: #1f77b4;\">🛈︎<\/span>"],["9 %","18 %","16 %; <1 % FAIR","6.9 %","58 %"],["<p><a href=\"http://dx.doi.org/10.1371/journal.pone.0024357\">Alsheikh-Ali et al., 2011<\/a><\/p>\n","<p><a href=\"http://dx.doi.org/10.1371/journal.pbio.2006930\">Wallach et al., 2018<\/a><\/p>\n","<p><a href=\"http://dx.doi.org/10.1186/s12916-022-02644-2\">Hamilton et al., 2022<\/a><\/p>\n","<p><a href=\"http://dx.doi.org/10.7759/cureus.9927\">Hanson et al., 2020<\/a><\/p>\n","<p><a href=\"http://dx.doi.org/10.1177/2515245920918872\">Obels et al., 2019<\/a><\/p>\n"],[9,18,16,6.9,58]],"container":"<table class=\"compact\">\n  <thead>\n    <tr>\n      <th>Contexto<\/th>\n      <th>% datos abiertos<\/th>\n      <th>Citas<\/th>\n      <th>pct_num<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"paging":false,"searching":false,"ordering":false,"info":false,"dom":"t","columnDefs":[{"targets":3,"visible":false},{"className":"dt-right","targets":3},{"name":"Contexto","targets":0},{"name":"% datos abiertos","targets":1},{"name":"Citas","targets":2},{"name":"pct_num","targets":3}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[3]; $(this.api().cell(row, 1).node()).css({'font-weight':'bold','color':isNaN(parseFloat(value)) ? '' : value <= 10 ? \"#b2182b\" : value <= 30 ? \"#ef8a62\" : \"#1a9850\",'text-align':'center'});\n}"}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
 </div>
 </div>
 </figure>
@@ -267,8 +347,8 @@ Tabla&nbsp;2
 </figcaption>
 <div aria-describedby="tbl-cumplimiento-fair-doi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-5524738afa46a1e815b3" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-5524738afa46a1e815b3">{"x":{"filter":"none","vertical":false,"data":[["COVID-19, repositorios <span title=\"5.700 conjuntos de datos en repositorios generales; cumplimiento medio ≈ 9,4/22 puntos.\" style=\"cursor: help; color:#1f77b4;\">🛈︎<\/span>","Odontología (2016–2021) <span title=\"Interoperabilidad y reusabilidad fueron las dimensiones más débiles.\" style=\"cursor: help; color:#1f77b4;\">🛈︎<\/span>","Adicciones <span title=\"Ningún ningún tema (alcohol, tabaco, opioides, etc.) superó 30 % de cumplimiento FAIR.\" style=\"cursor: help; color:#1f77b4;\">🛈︎<\/span>","Datos educativos LATAM <span title=\"Brasil, Colombia y Perú.\" style=\"cursor: help; color:#1f77b4;\">🛈︎<\/span>"],["Findable: <span style='color:#1a9850;font-weight:bold;'>100 %<\/span><br>Accessible: <span style='color:#b2182b;font-weight:bold;'>21.5 %<\/span><br>Interoperable: <span style='color:#ef8a62;font-weight:bold;'>46.7 %<\/span><br>Reusable: <span style='color:#1a9850;font-weight:bold;'>61.3 %<\/span>","<span style='color:#b2182b;font-weight:bold;'>1.5 %<\/span> comparten datos<br>FAIR global ≈ <span style='color:#ef8a62;font-weight:bold;'>32.6 %<\/span>","FAIR global: <span style='color:#b2182b;font-weight:bold;'>20–29 %<\/span><br>Findable: <span style='color:#ef8a62;font-weight:bold;'>40–59 %<\/span><br>A, I, R < <span style='color:#b2182b;font-weight:bold;'>40 %<\/span>","Findable: <span style='color:#1a9850;font-weight:bold;'>≈50 %<\/span><br>Accessible: <span style='color:#ef8a62;font-weight:bold;'>≈33 %<\/span><br>I / R: <span style='color:#b2182b;font-weight:bold;'>&lt;50 %<\/span>"],["<p><a href=\"http://dx.doi.org/10.1371/journal.pone.0313991\">Sofi-Mahmudi et al., 2023<\/a><\/p>\n","<p><a href=\"http://dx.doi.org/10.1177/00220345221101321\">Uribe et al., 2022<\/a><\/p>\n","<p><a href=\"http://dx.doi.org/10.1007/s11192-024-05227-5\">Sixto-Costoya et al., 2025<\/a><\/p>\n","<p><a href=\"http://dx.doi.org/10.18608/jla.2025.8441\">Soto Ruidias et al., 2025<\/a><\/p>\n"]],"container":"<table class=\"compact\">\n  <thead>\n    <tr>\n      <th>Contexto<\/th>\n      <th>% cumplimiento<\/th>\n      <th>Citas<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"paging":false,"searching":false,"ordering":false,"info":false,"dom":"t","columnDefs":[{"name":"Contexto","targets":0},{"name":"% cumplimiento","targets":1},{"name":"Citas","targets":2}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-size':'20px'});\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'font-size':'20px'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'font-size':'20px'});\n}"}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-3bdc749018c43c98c5cf" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-3bdc749018c43c98c5cf">{"x":{"filter":"none","vertical":false,"data":[["COVID-19, repositorios <span title=\"5.700 conjuntos de datos en repositorios generales; cumplimiento medio ≈ 9,4/22 puntos.\" style=\"cursor: help; color:#1f77b4;\">🛈︎<\/span>","Odontología (2016–2021) <span title=\"Interoperabilidad y reusabilidad fueron las dimensiones más débiles.\" style=\"cursor: help; color:#1f77b4;\">🛈︎<\/span>","Adicciones <span title=\"Ningún ningún tema (alcohol, tabaco, opioides, etc.) superó 30 % de cumplimiento FAIR.\" style=\"cursor: help; color:#1f77b4;\">🛈︎<\/span>","Datos educativos LATAM <span title=\"Brasil, Colombia y Perú.\" style=\"cursor: help; color:#1f77b4;\">🛈︎<\/span>"],["Findable: <span style='color:#1a9850;font-weight:bold;'>100 %<\/span><br>Accessible: <span style='color:#b2182b;font-weight:bold;'>21.5 %<\/span><br>Interoperable: <span style='color:#ef8a62;font-weight:bold;'>46.7 %<\/span><br>Reusable: <span style='color:#1a9850;font-weight:bold;'>61.3 %<\/span>","<span style='color:#b2182b;font-weight:bold;'>1.5 %<\/span> comparten datos<br>FAIR global ≈ <span style='color:#ef8a62;font-weight:bold;'>32.6 %<\/span>","FAIR global: <span style='color:#b2182b;font-weight:bold;'>20–29 %<\/span><br>Findable: <span style='color:#ef8a62;font-weight:bold;'>40–59 %<\/span><br>A, I, R < <span style='color:#b2182b;font-weight:bold;'>40 %<\/span>","Findable: <span style='color:#1a9850;font-weight:bold;'>≈50 %<\/span><br>Accessible: <span style='color:#ef8a62;font-weight:bold;'>≈33 %<\/span><br>I / R: <span style='color:#b2182b;font-weight:bold;'>&lt;50 %<\/span>"],["<p><a href=\"http://dx.doi.org/10.1371/journal.pone.0313991\">Sofi-Mahmudi et al., 2023<\/a><\/p>\n","<p><a href=\"http://dx.doi.org/10.1177/00220345221101321\">Uribe et al., 2022<\/a><\/p>\n","<p><a href=\"http://dx.doi.org/10.1007/s11192-024-05227-5\">Sixto-Costoya et al., 2025<\/a><\/p>\n","<p><a href=\"http://dx.doi.org/10.18608/jla.2025.8441\">Soto Ruidias et al., 2025<\/a><\/p>\n"]],"container":"<table class=\"compact\">\n  <thead>\n    <tr>\n      <th>Contexto<\/th>\n      <th>% cumplimiento<\/th>\n      <th>Citas<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"paging":false,"searching":false,"ordering":false,"info":false,"dom":"t","columnDefs":[{"name":"Contexto","targets":0},{"name":"% cumplimiento","targets":1},{"name":"Citas","targets":2}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-size':'20px'});\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'font-size':'20px'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'font-size':'20px'});\n}"}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
 </div>
 </div>
 </figure>
@@ -279,217 +359,456 @@ Tabla&nbsp;2
 <h2 data-id="quarto-animate-title">1.6 El problema real</h2>
 <p>El problema no es la “falta de apertura”, sino que muchos datos de investigación son:</p>
 <ul>
-<li class="fragment"><p><strong>Difíciles de localizar</strong>: repositorios dispersos, sin identificadores persistentes ni metadatos adecuados, lo que impide su localización por personas y máquinas <span class="citas">(<a href="https://doi.org/10.1038/sdata.2016.18">Wilkinson et al., 2016</a>; <a href="http://dx.doi.org/10.1002/gdj3.120">Kinkade et al., 2021</a>; <a href="https://doi.org/10.1016/j.jafr.2024.101157">Ugochukwu y Phillips, 2024</a>)</span>.</p></li>
-<li class="fragment"><p><strong>Formalmente abiertos, pero poco accesibles</strong>: datos “públicos” en sitios opacos, con trámites lentos o formatos cerrados, que frenan la reutilización efectiva <span class="citas">(<a href="https://doi.org/10.1177/20539517251325211">Schwalbach et al., 2025</a>; <a href="http://dx.doi.org/10.1016/j.jclinepi.2025.111680">Pellen et al., 2025</a>; <a href="http://dx.doi.org/10.3389/fenvs.2024.1497105">Mesman et al., 2024</a>)</span>.</p></li>
+<li class="fragment"><p><strong>Difíciles de localizar</strong>: repositorios dispersos, sin identificadores persistentes ni metadatos adecuados, lo que impide su localización por personas y máquinas <span class="small">(<a href="https://doi.org/10.1038/sdata.2016.18">Wilkinson et al., 2016</a>; <a href="http://dx.doi.org/10.1002/gdj3.120">Kinkade et al., 2021</a>; <a href="https://doi.org/10.1016/j.jafr.2024.101157">Ugochukwu y Phillips, 2024</a>)</span>.</p></li>
+<li class="fragment"><p><strong>Formalmente abiertos, pero poco accesibles</strong>: datos “públicos” en sitios opacos, con trámites lentos o formatos cerrados, que frenan la reutilización efectiva <span class="small">(<a href="https://doi.org/10.1177/20539517251325211">Schwalbach et al., 2025</a>; <a href="http://dx.doi.org/10.1016/j.jclinepi.2025.111680">Pellen et al., 2025</a>; <a href="http://dx.doi.org/10.3389/fenvs.2024.1497105">Mesman et al., 2024</a>)</span>.</p></li>
 </ul>
-<div class="fragment fade-in-then-out">
-<div class="quarto-figure quarto-figure-left">
+<div class="fragment fade-in">
+<div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/data_unavailability.png" class="quarto-figure quarto-figure-left" style="width:50.0%"></p>
+<p><img data-src="images/data_unavailability.png" class="quarto-figure quarto-figure-center" style="width:50.0%"></p>
 </figure>
 </div>
 </div>
 </section>
-<section id="el-problema-real-1" class="slide level2 center" data-auto-animate="true">
+<section id="el-problema-real-1" class="slide level2 unlisted center" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">1.6 El problema real</h2>
 <p>El problema no es la “falta de apertura”, sino que muchos datos de investigación son:</p>
 <ul>
-<li class="fragment"><p><strong>Poco interoperables</strong>: formatos, variables y terminologías idiosincráticas dificultan o impiden la comparación y combinación de estudios <span class="citas">(<a href="http://dx.doi.org/10.1016/j.jbi.2020.103421">Kush et al., 2020</a>; <a href="http://dx.doi.org/10.2196/45013">Inau et al., 2022</a>; <a href="http://dx.doi.org/10.1080/10572317.2025.2479280">Awadallah y Tammaro, 2025</a>; <a href="http://dx.doi.org/10.1089/big.2022.0207">Martin et al., 2022</a>)</span>.</p></li>
-<li class="fragment"><p><strong>Difíciles o imposibles de reutilizar</strong>: documentación y metadatos pobres, sin información sobre calidad o contexto <span class="citas">(<a href="http://dx.doi.org/10.1371/journal.pone.0229182">Perrier et al., 2020</a>; <a href="http://dx.doi.org/10.3389/fenvs.2024.1497105">Mesman et al., 2024</a>; <a href="https://doi.org/10.1016/j.jafr.2024.101157">Ugochukwu y Phillips, 2024</a>)</span>.</p></li>
+<li class="fragment"><p><strong>Poco interoperables</strong>: formatos, variables y terminologías idiosincráticas dificultan o impiden la comparación y combinación de estudios <span class="small">(<a href="http://dx.doi.org/10.1016/j.jbi.2020.103421">Kush et al., 2020</a>; <a href="http://dx.doi.org/10.2196/45013">Inau et al., 2022</a>; <a href="http://dx.doi.org/10.1080/10572317.2025.2479280">Awadallah y Tammaro, 2025</a>; <a href="http://dx.doi.org/10.1089/big.2022.0207">Martin et al., 2022</a>)</span>.</p></li>
+<li class="fragment"><p><strong>Difíciles o imposibles de reutilizar</strong>: documentación y metadatos pobres, sin información sobre calidad o contexto <span class="small">(<a href="http://dx.doi.org/10.1371/journal.pone.0229182">Perrier et al., 2020</a>; <a href="http://dx.doi.org/10.3389/fenvs.2024.1497105">Mesman et al., 2024</a>; <a href="https://doi.org/10.1016/j.jafr.2024.101157">Ugochukwu y Phillips, 2024</a>)</span>.</p></li>
 </ul>
 </section>
-<section id="el-problema-real-2" class="slide level2 center" data-auto-animate="true">
+<section id="el-problema-real-2" class="slide level2 unlisted center" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">1.6 El problema real</h2>
 <p>Además, gran parte del ecosistema de investigación está marcado por:</p>
 <ul>
-<li class="fragment"><p><strong>Incentivos mal alineados</strong>: la apertura se deja para el final, sin tiempo ni recursos, y compartir datos no se recompensa académicamente <span class="citas">(<a href="http://dx.doi.org/10.1371/journal.pone.0229182">Perrier et al., 2020</a>; <a href="http://dx.doi.org/10.1038/s41597-021-00981-0">Tedersoo et al., 2021</a>; <a href="http://dx.doi.org/10.3389/fpubh.2017.00327">Figueiredo, 2017</a>)</span>.</p></li>
-<li class="fragment"><p><strong>Software y código frágiles</strong>: scripts no versionados, sin documentación ni empaquetado, que comprometen la descubribilidad, reproducibilidad y sostenibilidad <span class="citas">(<a href="http://dx.doi.org/10.1038/s41597-022-01710-x">Barker et al., 2022</a>)</span>.</p></li>
-<li class="fragment"><p><strong>Barreras legales y éticas confusas</strong>: incertidumbre sobre privacidad, propiedad intelectual y usos indebidos lleva a no compartir o a hacerlo de forma muy restrictiva <span class="citas">(<a href="https://doi.org/10.1177/20539517251325211">Schwalbach et al., 2025</a>; <a href="http://dx.doi.org/10.1016/j.jclinepi.2025.111680">Pellen et al., 2025</a>; <a href="http://dx.doi.org/10.3389/fpubh.2017.00327">Figueiredo, 2017</a>)</span>.</p></li>
+<li class="fragment"><p><strong>Incentivos mal alineados</strong>: la apertura se deja para el final, sin tiempo ni recursos, y compartir datos no se recompensa académicamente <span class="small">(<a href="http://dx.doi.org/10.1371/journal.pone.0229182">Perrier et al., 2020</a>; <a href="http://dx.doi.org/10.1038/s41597-021-00981-0">Tedersoo et al., 2021</a>; <a href="http://dx.doi.org/10.3389/fpubh.2017.00327">Figueiredo, 2017</a>)</span>.</p></li>
+<li class="fragment"><p><strong>Software y código frágiles</strong>: scripts no versionados, sin documentación ni empaquetado, que comprometen la descubribilidad, reproducibilidad y sostenibilidad <span class="small">(<a href="http://dx.doi.org/10.1038/s41597-022-01710-x">Barker et al., 2022</a>)</span>.</p></li>
+<li class="fragment"><p><strong>Barreras legales y éticas confusas</strong>: incertidumbre sobre privacidad, propiedad intelectual y usos indebidos lleva a no compartir o a hacerlo de forma muy restrictiva <span class="small">(<a href="https://doi.org/10.1177/20539517251325211">Schwalbach et al., 2025</a>; <a href="http://dx.doi.org/10.1016/j.jclinepi.2025.111680">Pellen et al., 2025</a>; <a href="http://dx.doi.org/10.3389/fpubh.2017.00327">Figueiredo, 2017</a>)</span>.</p></li>
 </ul>
 </section></section>
 <section>
-<section id="parte-2-idea-central" class="title-slide slide level1 center">
-<h1><span data-auto-animate="true">Parte 2 · Idea central</span></h1>
+<section id="parte-2-aplicación" class="title-slide slide level1 center">
+<h1><span data-auto-animate="true">Parte 2 · Aplicación</span></h1>
 
 </section>
-<section id="abrir-no-es-publicar-al-final" class="slide level2 center" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Abrir no es publicar al final</h2>
-<ul>
-<li class="fragment">La apertura es una <strong>decisión de diseño</strong></li>
-<li class="fragment">Afecta cómo:
-<ul>
-<li class="fragment">pensamos el estudio</li>
-<li class="fragment">analizamos los datos</li>
-<li class="fragment">comunicamos resultados</li>
-</ul></li>
+<section id="tu-protocolo-es-fair" class="slide level2 center" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">2.1 ¿Tu protocolo es FAIR?</h2>
+<div class="small-list">
+<ul class="task-list">
+<li class="fragment"><label><input type="checkbox"><span data-auto-animate="true">Planificación FAIR desde el diseño del estudio</span> <span class="small">([1]; [11]; [17])</span><br>
+<span class="small"><em>Ej.: estructura de carpetas y esquema de nombres definidos antes de recolectar datos.</em></span></label></li>
+<li class="fragment"><label><input type="checkbox">Metadatos obligatorios y estándares definidos <span class="small">([1]; [16]; [18])</span><br>
+<span class="small"><em>Ej.: README + variables descritas con un esquema tipo <a href="https://datacite.org">DataCite</a>.</em></span></label></li>
+<li class="fragment"><label><input type="checkbox">Identificadores persistentes (DOI para datos, ORCID para autores) <span class="small">([1]; [14])</span><br>
+<span class="small"><em>Ej.: dataset con DOI en <a href="https://zenodo.org">Zenodo</a>/<a href="https://osf.io">OSF</a> y autores con <a href="https://orcid.org">ORCID</a> enlazado.</em></span></label></li>
+<li class="fragment"><label><input type="checkbox">Reglas claras de acceso y licencias <span class="small">([4]; [7]; [16])</span><br>
+<span class="small"><em>Ej.: datos abiertos bajo CC BY 4.0 u otras licencias <a href="https://co.creativecommons.net/tipos-de-licencias/">Creative Commons</a>; excepciones documentadas.</em></span></label></li>
+<li class="fragment"><label><input type="checkbox">Uso de formatos abiertos y estructurados <span class="small">([1]; [11]; [18])</span><br>
+<span class="small"><em>Ej.: datos tabulares en CSV; metadatos en JSON.</em></span></label></li>
+<li class="fragment"><label><input type="checkbox">Interoperabilidad semántica (ontologías, vocabularios controlados) <span class="small">([1]; [14]; [16])</span><br>
+<span class="small"><em>Ej.: “sexo” codificado según una ontología estándar, no como texto libre.</em></span></label></li>
 </ul>
+</div>
 </section>
-<section id="qué-es-realmente-un-protocolo" class="slide level2 center" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">¿Qué es realmente un protocolo?</h2>
-<ul>
-<li class="fragment">No es solo un preregistro</li>
-<li class="fragment">Es un <strong>contrato metodológico</strong></li>
-<li class="fragment">Define:
-<ul>
-<li class="fragment">qué cuenta como dato</li>
-<li class="fragment">qué análisis son válidos</li>
-<li class="fragment">qué decisiones se permiten</li>
-</ul></li>
+<section id="tu-protocolo-es-fair-1" class="slide level2 unlisted center" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">2.1 ¿Tu protocolo es FAIR?</h2>
+<div class="small-list">
+<ul class="task-list">
+<li><label><input type="checkbox"><span data-auto-animate="true">Planificación FAIR desde el diseño del estudio</span> <span class="small">([1]; [11]; [17])</span><br>
+<span class="small"><em>Ej.: estructura de carpetas y esquema de nombres definidos antes de recolectar datos.</em></span></label></li>
 </ul>
+</div>
+<p><strong>Ejemplo: estructura de proyecto FAIR</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource text number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode hljs"><span id="cb1-1" class="hljs-ln-code"><a href=""></a>project/</span>
+<span id="cb1-2" class="hljs-ln-code"><a href=""></a>├─ README.md</span>
+<span id="cb1-3" class="hljs-ln-code"><a href=""></a>├─ LICENSE</span>
+<span id="cb1-4" class="hljs-ln-code"><a href=""></a>├─ metadata/</span>
+<span id="cb1-5" class="hljs-ln-code"><a href=""></a>├─ data_raw/</span>
+<span id="cb1-6" class="hljs-ln-code"><a href=""></a>├─ data_processed/</span>
+<span id="cb1-7" class="hljs-ln-code"><a href=""></a>├─ code/</span>
+<span id="cb1-8" class="hljs-ln-code"><a href=""></a>├─ results/</span>
+<span id="cb1-9" class="hljs-ln-code"><a href=""></a>└─ docs/</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="tiny">
+<p><strong>Estructura y reproducibilidad:</strong> <a href="https://doi.org/10.1371/journal.pcbi.1005510">Wilson et al., 2016</a>; <a href="https://doi.org/10.1371/journal.pcbi.1000424">Noble, 2009</a>; <a href="https://doi.org/10.1525/collabra.158">Klein et al., 2018</a><br> <strong>Licencias y gobernanza del proyecto:</strong> <a href="https://doi.org/10.1525/collabra.158">Klein et al., 2018</a><br> <strong>Metadatos y datos (documentación, trazabilidad y preservación):</strong> <a href="https://doi.org/10.3390/data5020043">Spreckelsen et al., 2020</a>; <a href="https://doi.org/10.5334/dsj-2025-002">Pacharra et al., 2025</a>; <a href="https://doi.org/10.5334/dsj-2025-013">Engstfeld et al., 2025</a>; <a href="https://doi.org/10.1038/sdata.2016.18">Wilkinson et al., 2016</a>; <a href="https://doi.org/10.1016/j.expneurol.2024.114815">Fouad et al., 2024</a><br> <strong>Código, resultados y protocolos reproducibles:</strong> <a href="https://doi.org/10.1371/journal.pcbi.1005510">Wilson et al., 2016</a>; <a href="https://doi.org/10.1371/journal.pcbi.1000424">Noble, 2009</a>; <a href="https://doi.org/10.12688/f1000research.157325.2">Visentin et al., 2024</a>; <a href="https://doi.org/10.1152/physrev.00043.2023">Cunha-Oliveira et al., 2024</a>; <a href="https://doi.org/10.1186/s13104-022-05908-5">Kanza et al., 2022</a>; <a href="https://doi.org/10.1525/collabra.158">Klein et al., 2018</a></p>
+</div>
 </section>
-<section id="protocolos-bien-diseñados" class="slide level2 center">
-<h2>Protocolos bien diseñados</h2>
-<ul>
-<li class="fragment">Decisiones explícitas</li>
-<li class="fragment">Separar:
-<ul>
-<li class="fragment">teoría</li>
-<li class="fragment">técnica</li>
-</ul></li>
-<li class="fragment">Versionado</li>
-<li class="fragment">Trazabilidad de cambios</li>
+<section id="tu-protocolo-es-fair-2" class="slide level2 unlisted center" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">2.1 ¿Tu protocolo es FAIR?</h2>
+<div class="small-list">
+<ul class="task-list">
+<li><label><input type="checkbox"><span data-auto-animate="true">Planificación FAIR desde el diseño del estudio</span> <span class="small">([1]; [11]; [17])</span><br>
+<span class="small"><em>Ej.: estructura de carpetas y esquema de nombres definidos antes de recolectar datos.</em></span></label></li>
 </ul>
-</section>
-<section id="protocolos-y-fair" class="slide level2 center">
-<h2>Protocolos y FAIR</h2>
-<ul>
-<li class="fragment"><strong>Findable</strong>: existe y se puede localizar</li>
-<li class="fragment"><strong>Reusable</strong>: se entiende por qué se decidió lo que se decidió</li>
-</ul>
-</section>
-<section id="código-abierto" class="slide level2 center">
-<h2>Código abierto</h2>
-<h3 id="código-abierto-subir-scripts">Código abierto ≠ subir scripts</h3>
-<ul>
-<li class="fragment">El código es <strong>parte del método</strong></li>
-<li class="fragment">Código sin estructura ≠ transparencia</li>
-</ul>
-</section>
-<section id="buenas-prácticas-mínimas" class="slide level2 center">
-<h2>Buenas prácticas mínimas</h2>
-<ul>
-<li class="fragment">Un script = una tarea clara</li>
-<li class="fragment">Separar:
-<ul>
-<li class="fragment">datos crudos</li>
-<li class="fragment">datos procesados</li>
-<li class="fragment">análisis</li>
-</ul></li>
-<li class="fragment">README explicativo</li>
-<li class="fragment">Flujo ejecutable</li>
-</ul>
-</section>
-<section id="código-ejecutable" class="slide level2 center">
-<h2>Código ejecutable</h2>
+</div>
+<p><strong>Ejemplo: convenciones para nombrar archivos</strong></p>
 <blockquote>
-<p>El código no se abre para ser leído,<br>
-se abre para ser ejecutado</p>
+<p><code>sub-001_session-01_task-rest_bold.nii.gz</code> en vez de <code>final2.nii</code></p>
 </blockquote>
+<div class="small-list">
 <ul>
-<li class="fragment">Punto de entrada claro</li>
-<li class="fragment">Sin pasos manuales ocultos</li>
-<li class="fragment">Rutas relativas</li>
-<li class="fragment">Automatización mínima</li>
+<li>nombres descriptivos y consistentes <span class="small">(<a href="https://doi.org/10.3390/data5020043">Spreckelsen et al., 2020</a>; <a href="https://doi.org/10.1371/journal.pcbi.1000424">Noble, 2009</a>; <a href="https://doi.org/10.1016/j.expneurol.2024.114815">Fouad et al., 2024</a>)</span></li>
+<li>sin espacios ni caracteres especiales <span class="small">(<a href="https://doi.org/10.3390/data5020043">Spreckelsen et al., 2020</a>; <a href="https://doi.org/10.3390/data9020024">Wörden et al., 2024</a>; <a href="https://doi.org/10.1016/j.expneurol.2024.114815">Fouad et al., 2024</a>)</span>
+<ul>
+<li>fechas en formato ISO (YYYY-MM-DD)</li>
+</ul></li>
+<li>pocos niveles de carpetas <span class="small">(<a href="https://doi.org/10.3390/data5020043">Spreckelsen et al., 2020</a>; <a href="https://doi.org/10.3390/data9020024">Wörden et al., 2024</a>; <a href="https://doi.org/10.1016/j.expneurol.2024.114815">Fouad et al., 2024</a>)</span></li>
 </ul>
+</div>
 </section>
-<section id="datos-abiertos" class="slide level2 center">
-<h2>Datos abiertos</h2>
-<h3 id="abrir-sin-dañar">Abrir sin dañar</h3>
-<ul>
-<li class="fragment">Privacidad</li>
-<li class="fragment">Consentimiento</li>
-<li class="fragment">Poblaciones vulnerables</li>
-<li class="fragment">Datos sensibles</li>
+<section id="tu-protocolo-es-fair-3" class="slide level2 unlisted center" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">2.1 ¿Tu protocolo es FAIR?</h2>
+<div class="small-list">
+<ul class="task-list">
+<li><label><input type="checkbox" checked=""><span data-auto-animate="true">Planificación FAIR desde el diseño del estudio</span> <span class="small">([1]; [11]; [17])</span><br>
+<span class="small"><em>Ej.: estructura de carpetas y esquema de nombres definidos antes de recolectar datos.</em></span></label></li>
+<li><label><input type="checkbox">Metadatos obligatorios y estándares definidos <span class="small">([1]; [16]; [18])</span><br>
+<span class="small"><em>Ej.: README + variables descritas con un esquema tipo <a href="https://datacite.org">DataCite</a>.</em></span></label></li>
+<li><label><input type="checkbox">Identificadores persistentes (DOI para datos, ORCID para autores) <span class="small">([1]; [14])</span><br>
+<span class="small"><em>Ej.: dataset con DOI en <a href="https://zenodo.org">Zenodo</a>/<a href="https://osf.io">OSF</a> y autores con <a href="https://orcid.org">ORCID</a> enlazado.</em></span></label></li>
+<li><label><input type="checkbox">Reglas claras de acceso y licencias <span class="small">([4]; [7]; [16])</span><br>
+<span class="small"><em>Ej.: datos abiertos bajo CC BY 4.0 u otras licencias <a href="https://co.creativecommons.net/tipos-de-licencias/">Creative Commons</a>; excepciones documentadas.</em></span></label></li>
+<li><label><input type="checkbox">Uso de formatos abiertos y estructurados <span class="small">([1]; [11]; [18])</span><br>
+<span class="small"><em>Ej.: datos tabulares en CSV; metadatos en JSON.</em></span></label></li>
+<li><label><input type="checkbox">Interoperabilidad semántica (ontologías, vocabularios controlados) <span class="small">([1]; [14]; [16])</span><br>
+<span class="small"><em>Ej.: “sexo” codificado según una ontología estándar, no como texto libre.</em></span></label></li>
 </ul>
+</div>
 </section>
-<section id="datos-machine-readable" class="slide level2 center">
-<h2>Datos <em>machine-readable</em></h2>
-<h3 id="qué-significa">Qué significa</h3>
+<section id="tu-protocolo-es-fair-4" class="slide level2 unlisted center" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">2.1 ¿Tu protocolo es FAIR?</h2>
+<div class="small-list">
+<ul class="task-list">
+<li><label><input type="checkbox">Metadatos obligatorios y estándares definidos <span class="small">([1]; [16]; [18])</span><br>
+<span class="small"><em>Ej.: README + variables descritas con un esquema tipo <a href="https://datacite.org">DataCite</a>.</em></span></label></li>
+</ul>
+</div>
+<div class="small-list">
 <ul>
-<li class="fragment">Interpretables automáticamente</li>
-<li class="fragment">Sin decisiones humanas implícitas</li>
-<li class="fragment">Estructura clara:
+<li>Descripción y propósito del proyecto → Qué hace y qué problema resuelve.<br>
+<span class="tiny">Muchos READMEs explican el <em>qué</em> y el <em>cómo</em>, pero omiten el propósito y el estado del proyecto (<a href="https://doi.org/10.1007/s10664-018-9660-3">Prana et al., 2019</a>)</span></li>
+<li>Instalación y primer uso → Pasos claros de instalación + ejemplo mínimo funcional.<br>
+<span class="tiny">READMEs con instrucciones de instalación y uso se asocian con proyectos más populares (<a href="http://dx.doi.org/10.1016/j.infsof.2022.106924">Liu et al., 2022</a>)</span>.</li>
+<li>Estructura del repositorio y enlaces clave → Mapa básico de carpetas/archivos importantes y enlaces a documentación externa.<br>
+<span class="tiny">Incluir fragmentos de código y enlaces a recursos visuales se relaciona con más visibilidad (<a href="http://dx.doi.org/10.1016/j.infsof.2022.106924">Liu et al., 2022</a>)</span>.</li>
+<li>Estado, mantenimiento y licencia → Indicar licencia y si el proyecto está activo.<br>
+<span class="tiny">La información de licencia es uno de los contenidos más frecuentes y valorados en software (<a href="http://dx.doi.org/10.1587/transinf.2018edp7071">Ikeda et al., 2018</a>)</span>.</li>
+<li>Cómo contribuir o pedir ayuda → Pautas mínimas para contribuciones y canales de soporte (issues, email, foro).<br>
+<span class="tiny">Directrices de contribución y referencias se asocian con mayor popularidad del proyecto (<a href="http://dx.doi.org/10.48550/arxiv.2206.10772">Venigalla et al., 2022</a>)</span>.</li>
+</ul>
+</div>
+</section>
+<section id="tu-protocolo-es-fair-5" class="slide level2 unlisted center" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">2.1 ¿Tu protocolo es FAIR?</h2>
+<div class="small-list">
+<ul class="task-list">
+<li><label><input type="checkbox" checked=""><span data-auto-animate="true">Planificación FAIR desde el diseño del estudio</span> <span class="small">([1]; [11]; [17])</span><br>
+<span class="small"><em>Ej.: estructura de carpetas y esquema de nombres definidos antes de recolectar datos.</em></span></label></li>
+<li><label><input type="checkbox" checked="">Metadatos obligatorios y estándares definidos <span class="small">([1]; [16]; [18])</span><br>
+<span class="small"><em>Ej.: README + variables descritas con un esquema tipo <a href="https://datacite.org">DataCite</a>.</em></span></label></li>
+<li><label><input type="checkbox">Identificadores persistentes (DOI para datos, ORCID para autores) <span class="small">([1]; [14])</span><br>
+<span class="small"><em>Ej.: dataset con DOI en <a href="https://zenodo.org">Zenodo</a>/<a href="https://osf.io">OSF</a> y autores con <a href="https://orcid.org">ORCID</a> enlazado.</em></span></label></li>
+<li><label><input type="checkbox">Reglas claras de acceso y licencias <span class="small">([4]; [7]; [16])</span><br>
+<span class="small"><em>Ej.: datos abiertos bajo CC BY 4.0 u otras licencias <a href="https://co.creativecommons.net/tipos-de-licencias/">Creative Commons</a>; excepciones documentadas.</em></span></label></li>
+<li><label><input type="checkbox">Uso de formatos abiertos y estructurados <span class="small">([1]; [11]; [18])</span><br>
+<span class="small"><em>Ej.: datos tabulares en CSV; metadatos en JSON.</em></span></label></li>
+<li><label><input type="checkbox">Interoperabilidad semántica (ontologías, vocabularios controlados) <span class="small">([1]; [14]; [16])</span><br>
+<span class="small"><em>Ej.: “sexo” codificado según una ontología estándar, no como texto libre.</em></span></label></li>
+</ul>
+</div>
+</section>
+<section id="tu-protocolo-es-fair-6" class="slide level2 unlisted center" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">2.1 ¿Tu protocolo es FAIR?</h2>
+<div class="small-list">
+<ul class="task-list">
+<li><label><input type="checkbox" checked=""><span data-auto-animate="true">Planificación FAIR desde el diseño del estudio</span> <span class="small">([1]; [11]; [17])</span><br>
+<span class="small"><em>Ej.: estructura de carpetas y esquema de nombres definidos antes de recolectar datos.</em></span></label></li>
+<li><label><input type="checkbox" checked="">Metadatos obligatorios y estándares definidos <span class="small">([1]; [16]; [18])</span><br>
+<span class="small"><em>Ej.: README + variables descritas con un esquema tipo <a href="https://datacite.org">DataCite</a>.</em></span></label></li>
+<li><label><input type="checkbox" checked="">Identificadores persistentes (DOI para datos, ORCID para autores) <span class="small">([1]; [14])</span><br>
+<span class="small"><em>Ej.: dataset con DOI en <a href="https://zenodo.org">Zenodo</a>/<a href="https://osf.io">OSF</a> y autores con <a href="https://orcid.org">ORCID</a> enlazado.</em></span></label></li>
+<li><label><input type="checkbox">Reglas claras de acceso y licencias <span class="small">([4]; [7]; [16])</span><br>
+<span class="small"><em>Ej.: datos abiertos bajo CC BY 4.0 u otras licencias <a href="https://co.creativecommons.net/tipos-de-licencias/">Creative Commons</a>; excepciones documentadas.</em></span></label></li>
+<li><label><input type="checkbox">Uso de formatos abiertos y estructurados <span class="small">([1]; [11]; [18])</span><br>
+<span class="small"><em>Ej.: datos tabulares en CSV; metadatos en JSON.</em></span></label></li>
+<li><label><input type="checkbox">Interoperabilidad semántica (ontologías, vocabularios controlados) <span class="small">([1]; [14]; [16])</span><br>
+<span class="small"><em>Ej.: “sexo” codificado según una ontología estándar, no como texto libre.</em></span></label></li>
+</ul>
+</div>
+</section>
+<section id="tu-protocolo-es-fair-7" class="slide level2 unlisted center" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">2.1 ¿Tu protocolo es FAIR?</h2>
+<div class="small-list">
+<ul class="task-list">
+<li><label><input type="checkbox" checked=""><span data-auto-animate="true">Planificación FAIR desde el diseño del estudio</span> <span class="small">([1]; [11]; [17])</span><br>
+<span class="small"><em>Ej.: estructura de carpetas y esquema de nombres definidos antes de recolectar datos.</em></span></label></li>
+<li><label><input type="checkbox" checked="">Metadatos obligatorios y estándares definidos <span class="small">([1]; [16]; [18])</span><br>
+<span class="small"><em>Ej.: README + variables descritas con un esquema tipo <a href="https://datacite.org">DataCite</a>.</em></span></label></li>
+<li><label><input type="checkbox" checked="">Identificadores persistentes (DOI para datos, ORCID para autores) <span class="small">([1]; [14])</span><br>
+<span class="small"><em>Ej.: dataset con DOI en <a href="https://zenodo.org">Zenodo</a>/<a href="https://osf.io">OSF</a> y autores con <a href="https://orcid.org">ORCID</a> enlazado.</em></span></label></li>
+<li><label><input type="checkbox" checked="">Reglas claras de acceso y licencias <span class="small">([4]; [7]; [16])</span><br>
+<span class="small"><em>Ej.: datos abiertos bajo CC BY 4.0 u otras licencias <a href="https://co.creativecommons.net/tipos-de-licencias/">Creative Commons</a>; excepciones documentadas.</em></span></label></li>
+<li><label><input type="checkbox">Uso de formatos abiertos y estructurados <span class="small">([1]; [11]; [18])</span><br>
+<span class="small"><em>Ej.: datos tabulares en CSV; metadatos en JSON.</em></span></label></li>
+<li><label><input type="checkbox">Interoperabilidad semántica (ontologías, vocabularios controlados) <span class="small">([1]; [14]; [16])</span><br>
+<span class="small"><em>Ej.: “sexo” codificado según una ontología estándar, no como texto libre.</em></span></label></li>
+</ul>
+</div>
+</section>
+<section id="tu-protocolo-es-fair-8" class="slide level2 unlisted center" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">2.1 ¿Tu protocolo es FAIR?</h2>
+<div class="small-list">
+<ul class="task-list">
+<li><label><input type="checkbox">Uso de formatos abiertos y estructurados <span class="small">([1]; [11]; [18])</span><br>
+<span class="small"><em>Ej.: datos tabulares en CSV; metadatos en JSON.</em></span></label></li>
+</ul>
+</div>
+<h3 id="excel-vs-csv">Excel vs CSV</h3>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Excel permite:</p>
+<div class="small-list">
 <ul>
-<li class="fragment">filas = observaciones</li>
-<li class="fragment">columnas = variables</li>
+<li>Celdas fusionadas</li>
+<li>Múltiples encabezados</li>
+<li>Formato visual</li>
+<li>Ambigüedad estructural</li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="images/excel_mal.png" class="quarto-figure quarto-figure-left" style="width:75.0%"></p>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="tu-protocolo-es-fair-9" class="slide level2 unlisted center" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">2.1 ¿Tu protocolo es FAIR?</h2>
+<div class="small-list">
+<ul class="task-list">
+<li><label><input type="checkbox">Uso de formatos abiertos y estructurados <span class="small">([1]; [11]; [18])</span><br>
+<span class="small"><em>Ej.: datos tabulares en CSV; metadatos en JSON.</em></span></label></li>
+</ul>
+</div>
+<h3 id="excel-vs-csv-1">Excel vs CSV</h3>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Excel permite:</p>
+<div class="small-list">
+<ul>
+<li>Celdas fusionadas</li>
+<li>Múltiples encabezados</li>
+<li>Formato visual</li>
+<li>Ambigüedad estructural</li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<p>CSV es:</p>
+<div class="small-list">
+<ul>
+<li>Formato abierto</li>
+<li>Sin elementos visuales</li>
+<li>Estructura tabular explícita</li>
+<li>Previene errores antes de que ocurran</li>
+</ul>
+</div>
+</div></div>
+</section>
+<section id="tu-protocolo-es-fair-10" class="slide level2 unlisted center" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">2.1 ¿Tu protocolo es FAIR?</h2>
+<div class="small-list">
+<ul class="task-list">
+<li><label><input type="checkbox">Uso de formatos abiertos y estructurados <span class="small">([1]; [11]; [18])</span><br>
+<span class="small"><em>Ej.: datos tabulares en CSV; metadatos en JSON.</em></span></label></li>
+</ul>
+</div>
+<h3 id="excel-vs-csv-2">Excel vs CSV</h3>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>CSV es:</p>
+<div class="small-list">
+<ul>
+<li>Formato abierto</li>
+<li>Sin elementos visuales</li>
+<li>Estructura tabular explícita</li>
+<li>Previene errores antes de que ocurran</li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="images/excel_bien.png" class="quarto-figure quarto-figure-left" style="width:75.0%"></p>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="tu-protocolo-es-fair-11" class="slide level2 unlisted center" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">2.1 ¿Tu protocolo es FAIR?</h2>
+<div class="small-list">
+<ul class="task-list">
+<li><label><input type="checkbox">Uso de formatos abiertos y estructurados <span class="small">([1]; [11]; [18])</span><br>
+<span class="small"><em>Ej.: datos tabulares en CSV; metadatos en JSON.</em></span></label></li>
+</ul>
+</div>
+<h3 id="excel-vs-csv-3">Excel vs CSV</h3>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p>CSV es:</p>
+<div class="small-list">
+<ul>
+<li>Estructura tabular explícita
+<ul>
+<li>Una fila = una observación</li>
+<li>Una columna = una variable</li>
+<li>Sin notas mezcladas con los datos</li>
 </ul></li>
 </ul>
+</div>
+</div><div class="column" style="width:45%;">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="images/excel_bien.png" class="quarto-figure quarto-figure-left" style="width:75.0%"></p>
+</figure>
+</div>
+</div></div>
 </section>
-<section id="excel-vs-csv" class="slide level2 center">
-<h2>Excel vs CSV</h2>
-<h3 id="el-problema-no-es-excel-es-el-diseño">El problema no es Excel, es el diseño</h3>
-<p>Excel permite: - celdas fusionadas - múltiples encabezados - formato visual - ambigüedad estructural</p>
-</section>
-<section id="csv-como-decisión-de-diseño" class="slide level2 center">
-<h2>CSV como decisión de diseño</h2>
-<ul>
-<li class="fragment">Formato abierto</li>
-<li class="fragment">Sin elementos visuales</li>
-<li class="fragment">Estructura tabular explícita</li>
-<li class="fragment">Previene errores antes de que ocurran</li>
+<section id="tu-protocolo-es-fair-12" class="slide level2 unlisted center" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">2.1 ¿Tu protocolo es FAIR?</h2>
+<div class="small-list">
+<ul class="task-list">
+<li><label><input type="checkbox" checked=""><span data-auto-animate="true">Planificación FAIR desde el diseño del estudio</span> <span class="small">([1]; [11]; [17])</span><br>
+<span class="small"><em>Ej.: estructura de carpetas y esquema de nombres definidos antes de recolectar datos.</em></span></label></li>
+<li><label><input type="checkbox" checked="">Metadatos obligatorios y estándares definidos <span class="small">([1]; [16]; [18])</span><br>
+<span class="small"><em>Ej.: README + variables descritas con un esquema tipo <a href="https://datacite.org">DataCite</a>.</em></span></label></li>
+<li><label><input type="checkbox" checked="">Identificadores persistentes (DOI para datos, ORCID para autores) <span class="small">([1]; [14])</span><br>
+<span class="small"><em>Ej.: dataset con DOI en <a href="https://zenodo.org">Zenodo</a>/<a href="https://osf.io">OSF</a> y autores con <a href="https://orcid.org">ORCID</a> enlazado.</em></span></label></li>
+<li><label><input type="checkbox" checked="">Reglas claras de acceso y licencias <span class="small">([4]; [7]; [16])</span><br>
+<span class="small"><em>Ej.: datos abiertos bajo CC BY 4.0 u otras licencias <a href="https://co.creativecommons.net/tipos-de-licencias/">Creative Commons</a>; excepciones documentadas.</em></span></label></li>
+<li><label><input type="checkbox" checked="">Uso de formatos abiertos y estructurados <span class="small">([1]; [11]; [18])</span><br>
+<span class="small"><em>Ej.: datos tabulares en CSV; metadatos en JSON.</em></span></label></li>
+<li><label><input type="checkbox">Interoperabilidad semántica (ontologías, vocabularios controlados) <span class="small">([1]; [14]; [16])</span><br>
+<span class="small"><em>Ej.: “sexo” codificado según una ontología estándar, no como texto libre.</em></span></label></li>
 </ul>
-<blockquote>
-<p>La estética no es metadato</p>
-</blockquote>
+</div>
 </section>
-<section id="fair-y-datos" class="slide level2 center">
-<h2>FAIR y datos</h2>
-<ul>
-<li class="fragment"><strong>Accessible</strong> ≠ “abre en mi computador”</li>
-<li class="fragment"><strong>Interoperable</strong> ≠ “yo sé cómo leerlo”</li>
-<li class="fragment"><strong>Reusable</strong> requiere contexto y estructura</li>
+<section id="tu-protocolo-es-fair-13" class="slide level2 unlisted center" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">2.1 ¿Tu protocolo es FAIR?</h2>
+<div class="small-list">
+<ul class="task-list">
+<li><label><input type="checkbox" checked=""><span data-auto-animate="true">Planificación FAIR desde el diseño del estudio</span> <span class="small">([1]; [11]; [17])</span><br>
+<span class="small"><em>Ej.: estructura de carpetas y esquema de nombres definidos antes de recolectar datos.</em></span></label></li>
+<li><label><input type="checkbox" checked="">Metadatos obligatorios y estándares definidos <span class="small">([1]; [16]; [18])</span><br>
+<span class="small"><em>Ej.: README + variables descritas con un esquema tipo <a href="https://datacite.org">DataCite</a>.</em></span></label></li>
+<li><label><input type="checkbox" checked="">Identificadores persistentes (DOI para datos, ORCID para autores) <span class="small">([1]; [14])</span><br>
+<span class="small"><em>Ej.: dataset con DOI en <a href="https://zenodo.org">Zenodo</a>/<a href="https://osf.io">OSF</a> y autores con <a href="https://orcid.org">ORCID</a> enlazado.</em></span></label></li>
+<li><label><input type="checkbox" checked="">Reglas claras de acceso y licencias <span class="small">([4]; [7]; [16])</span><br>
+<span class="small"><em>Ej.: datos abiertos bajo CC BY 4.0 u otras licencias <a href="https://co.creativecommons.net/tipos-de-licencias/">Creative Commons</a>; excepciones documentadas.</em></span></label></li>
+<li><label><input type="checkbox" checked="">Uso de formatos abiertos y estructurados <span class="small">([1]; [11]; [18])</span><br>
+<span class="small"><em>Ej.: datos tabulares en CSV; metadatos en JSON.</em></span></label></li>
+<li><label><input type="checkbox" checked="">Interoperabilidad semántica (ontologías, vocabularios controlados) <span class="small">([1]; [14]; [16])</span><br>
+<span class="small"><em>Ej.: “sexo” codificado según una ontología estándar, no como texto libre.</em></span></label></li>
 </ul>
+</div>
 </section>
 <section id="proc-b-como-ejemplo" class="slide level2 center">
-<h2>Proc B como ejemplo</h2>
-<h3 id="no-como-revista-sino-como-modelo">No como revista, sino como modelo</h3>
-<ul>
-<li class="fragment">Datos, código y README son <strong>evaluables</strong></li>
-<li class="fragment">Reproducibilidad computacional mínima</li>
-<li class="fragment">Excepciones éticas explícitas</li>
-<li class="fragment">Documentación central</li>
+<h2>2.2 Proc B como ejemplo</h2>
+
+<img data-src="images/logo_Proc-B.png" class="quarto-figure quarto-figure-center r-stretch" style="width:20.0%"><ul>
+<li>Datos, código y README son <strong>evaluables</strong></li>
+<li>Reproducibilidad computacional mínima</li>
+<li>Excepciones éticas explícitas</li>
 </ul>
-</section>
-<section id="el-rol-del-readme" class="slide level2 center">
-<h2>El rol del README</h2>
+<div class="small">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>El rol del README</strong></p>
 <ul>
 <li class="fragment">Más importante que el archivo de datos</li>
 <li class="fragment">Conecta:
 <ul>
-<li class="fragment">protocolo</li>
-<li class="fragment">datos</li>
-<li class="fragment">código</li>
+<li class="fragment">protocolo / datos / código</li>
 </ul></li>
 <li class="fragment">Permite reutilización real</li>
 </ul>
-</section>
-<section id="reproducibilidad-razonable" class="slide level2 center">
-<h2>Reproducibilidad razonable</h2>
-<blockquote>
-<p>No es replicación total<br>
-es <strong>ejecución sin fricción</strong></p>
-</blockquote>
+</div><div class="column" style="width:50%;">
+<p><strong>Reproducibilidad razonable</strong></p>
 <ul>
 <li class="fragment">El código corre</li>
 <li class="fragment">Los datos cargan</li>
 <li class="fragment">El flujo tiene sentido</li>
 </ul>
+</div></div>
+</div>
 </section>
-<section id="cierre" class="slide level2 center">
-<h2>Cierre</h2>
-<h3 id="una-regla-simple">Una regla simple</h3>
+<section id="recomendaciones-generales" class="slide level2 center">
+<h2>2.3 Recomendaciones generales</h2>
+<div class="small">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Código y datos reproducibles</strong></p>
 <blockquote>
-<p>Si no entiendo mi propio proyecto en 6 meses<br>
-sin explicaciones extra, no está listo para ser abierto</p>
+<p>El código se abre <strong>para correrlo</strong>, no para leerlo</p>
 </blockquote>
+<ul>
+<li class="fragment">Sin pasos manuales ocultos<br>
+</li>
+<li class="fragment">Rutas relativas<br>
+</li>
+<li class="fragment">Automatización mínima reproducible</li>
+</ul>
+<p><span class="fragment"><strong>Datos abiertos sin dañar</strong></span></p>
+<ul>
+<li class="fragment">Privacidad y consentimiento<br>
+</li>
+<li class="fragment">Poblaciones vulnerables<br>
+</li>
+<li class="fragment">Datos sensibles ≠ datos cerrados<br>
+<em>(acceso y documentación importan)</em><br>
+</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><span class="fragment"><strong>Datos <em>machine-readable</em></strong></span></p>
+<ul>
+<li class="fragment">Interpretables automáticamente<br>
+</li>
+<li class="fragment">Sin decisiones humanas implícitas<br>
+</li>
+<li class="fragment">Estructura clara:
+<ul>
+<li class="fragment">filas = observaciones<br>
+</li>
+<li class="fragment">columnas = variables</li>
+</ul></li>
+<li class="fragment">Formato abierto (e.g., CSV)</li>
+</ul>
+<p><span class="fragment"><strong>FAIR no es intuición personal</strong></span></p>
+<ul>
+<li class="fragment">Accessible ≠ “abre en mi computador”<br>
+</li>
+<li class="fragment">Interoperable ≠ “yo sé cómo leerlo”<br>
+</li>
+<li class="fragment">Reusable requiere:
+<ul>
+<li class="fragment">estructura<br>
+</li>
+<li class="fragment">documentación</li>
+</ul></li>
+</ul>
+</div></div>
+</div>
 </section>
-<section id="mensaje-final" class="slide level2 center">
-<h2>Mensaje final</h2>
-<p>La ciencia abierta no es un requisito administrativo<br>
-es <strong>infraestructura intelectual</strong></p>
-</section>
-<section id="preguntas" class="slide level2 center">
-<h2>Preguntas</h2>
+<section id="gracias" class="slide level2 center" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">¡Gracias!</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><a href="https://jdleongomez.info/es/"><img data-src="images/jdl_qr.png" style="width:80.0%"></a></p>
+</div><div class="column" style="width:55%;">
+<div style="margin-top: 8em;">
+
+</div>
+<p><strong>Juan David Leongómez</strong> <span style="font-size: 50%;">PhD, MSc</span><br> <span style="font-size: 70%;"><a href="mailto:jleongomez@unbosque.edu.co">jleongomez@unbosque.edu.co</a></span></p>
+</div></div>
 
 </section></section>
 

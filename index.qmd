@@ -36,7 +36,7 @@ date: 2026-01-23
 
 # Tabla de contenidos
 toc: true
-toc-depth: 1
+toc-depth: 2
 toc-expand: true
 
 # Configuración
@@ -44,7 +44,7 @@ css: css/reveal-custom.css
 lang: es
 transition: fade
 slide-number: true
-incremental: true
+incremental: false
 center: true
 logo: images/logos.png
 footer: |
@@ -53,7 +53,7 @@ footer: |
       <span style="font-size:50%;">PhD, MSc</span>
 ---
 
-## 📲 Accede a las diapositivas en línea
+## 📲 Accede a las diapositivas en línea {.unlisted}
 
 [![](images/presentacion_QR.svg){fig-align="left" width="50%"}](https://jdleongomez.github.io/protocolos_codigo_y_datos_abiertos/)
 
@@ -82,27 +82,31 @@ footer: |
 
 ## 1.2 Principios FAIR: beneficios científicos y técnicos {auto-animate="true"}
 
-* Aumentan la reutilización y el impacto de los datos por humanos y máquinas ([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008)).
+::: {.incremental}
+* Aumentan la reutilización y el impacto de los datos por humanos y máquinas [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}.
 
-* Mejoran la localización y el acceso a datos distribuidos, facilitando la colaboración ([Tanhua et al., 2019](https://doi.org/10.3389/fmars.2019.00440)).
+* Mejoran la localización y el acceso a datos distribuidos, facilitando la colaboración [([Tanhua et al., 2019](https://doi.org/10.3389/fmars.2019.00440))]{.small}.
 
-* Refuerzan la reproducibilidad y verificabilidad de los resultados científicos ([Götz, 2023](https://doi.org/10.56367/oag-039-10749); [Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18)).
+* Refuerzan la reproducibilidad y verificabilidad de los resultados científicos [([Götz, 2023](https://doi.org/10.56367/oag-039-10749); [Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18))]{.small}.
 
-* Habilitan el uso eficiente de IA y aprendizaje automático con datos bien descritos ([Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008); [Olsen, 2023](https://doi.org/10.14229/onco.2023.08.29.001)).
+* Habilitan el uso eficiente de IA y aprendizaje automático con datos bien descritos [([Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008); [Olsen, 2023](https://doi.org/10.14229/onco.2023.08.29.001))]{.small}.
+:::
 
 ---
 
 ## 1.3 Principios FAIR: beneficios organizacionales y estratégicos {auto-animate="true"}
 
-* Apoyan una gestión ética y responsable de los datos, en combinación con CARE[^1] ([Carroll et al., 2021](https://doi.org/10.1038/s41597-021-00892-0))
+::: {.incremental}
+* Apoyan una gestión ética y responsable de los datos, en combinación con CARE[^1] [([Carroll et al., 2021](https://doi.org/10.1038/s41597-021-00892-0))]{.small}.
 
-* Reducen tiempos y costes en la gestión y el análisis de datos ([Martínez-García et al., 2023](https://doi.org/10.1016/j.heliyon.2023.e15733); [Alharbi et al., 2023](https://doi.org/10.1016/j.drudis.2023.103510)).
+* Reducen tiempos y costes en la gestión y el análisis de datos [([Martínez-García et al., 2023](https://doi.org/10.1016/j.heliyon.2023.e15733); [Alharbi et al., 2023](https://doi.org/10.1016/j.drudis.2023.103510))]{.small}.
 
-* Favorecen la interoperabilidad entre dominios mediante estándares comunes ([Tanhua et al., 2019](https://doi.org/10.3389/fmars.2019.00440); [Krisnawijaya et al., 2025](https://doi.org/10.1016/j.compag.2024.109855)).
+* Favorecen la interoperabilidad entre dominios mediante estándares comunes [([Tanhua et al., 2019](https://doi.org/10.3389/fmars.2019.00440); [Krisnawijaya et al., 2025](https://doi.org/10.1016/j.compag.2024.109855))]{.small}.
 
-* Sirven como marco estratégico para priorizar la FAIRificación y la preservación a largo plazo ([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18)).
+* Sirven como marco estratégico para priorizar la FAIRificación y la preservación a largo plazo [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18))]{.small}.
 
 [^1]: CARE: marco para la gobernanza ética de los datos, complementario a FAIR, centrado en pueblos indígenas y comunidades históricamente marginadas.
+:::
 
 ---
 
@@ -264,217 +268,476 @@ datatable(
 
 El problema no es la “falta de apertura”, sino que muchos datos de investigación son:
 
-* **Difíciles de localizar**: repositorios dispersos, sin identificadores persistentes ni metadatos adecuados, lo que impide su localización por personas y máquinas [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Kinkade et al., 2021](http://dx.doi.org/10.1002/gdj3.120); [Ugochukwu y Phillips, 2024](https://doi.org/10.1016/j.jafr.2024.101157))]{.citas}.
+::: {.incremental}
+* **Difíciles de localizar**: repositorios dispersos, sin identificadores persistentes ni metadatos adecuados, lo que impide su localización por personas y máquinas [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Kinkade et al., 2021](http://dx.doi.org/10.1002/gdj3.120); [Ugochukwu y Phillips, 2024](https://doi.org/10.1016/j.jafr.2024.101157))]{.small}.
 
-* **Formalmente abiertos, pero poco accesibles**: datos “públicos” en sitios opacos, con trámites lentos o formatos cerrados, que frenan la reutilización efectiva [([Schwalbach et al., 2025](https://doi.org/10.1177/20539517251325211); [Pellen et al., 2025](http://dx.doi.org/10.1016/j.jclinepi.2025.111680); [Mesman et al., 2024](http://dx.doi.org/10.3389/fenvs.2024.1497105))]{.citas}.
+* **Formalmente abiertos, pero poco accesibles**: datos “públicos” en sitios opacos, con trámites lentos o formatos cerrados, que frenan la reutilización efectiva [([Schwalbach et al., 2025](https://doi.org/10.1177/20539517251325211); [Pellen et al., 2025](http://dx.doi.org/10.1016/j.jclinepi.2025.111680); [Mesman et al., 2024](http://dx.doi.org/10.3389/fenvs.2024.1497105))]{.small}.
+:::
 
-::: {.fragment .fade-in-then-out}
-![](images/data_unavailability.png){fig-align="left" width="50%"}
+::: {.fragment .fade-in}
+![](images/data_unavailability.png){fig-align="center" width="50%"}
 :::
 
 ---
 
-## 1.6 El problema real {auto-animate="true"}
+## 1.6 El problema real {auto-animate="true" .unlisted}
 
 El problema no es la “falta de apertura”, sino que muchos datos de investigación son:
 
-* **Poco interoperables**: formatos, variables y terminologías idiosincráticas dificultan o impiden la comparación y combinación de estudios [([Kush et al., 2020](http://dx.doi.org/10.1016/j.jbi.2020.103421); [Inau et al., 2022](http://dx.doi.org/10.2196/45013); [Awadallah y Tammaro, 2025](http://dx.doi.org/10.1080/10572317.2025.2479280); [Martin et al., 2022](http://dx.doi.org/10.1089/big.2022.0207))]{.citas}.
+::: {.incremental}
+* **Poco interoperables**: formatos, variables y terminologías idiosincráticas dificultan o impiden la comparación y combinación de estudios [([Kush et al., 2020](http://dx.doi.org/10.1016/j.jbi.2020.103421); [Inau et al., 2022](http://dx.doi.org/10.2196/45013); [Awadallah y Tammaro, 2025](http://dx.doi.org/10.1080/10572317.2025.2479280); [Martin et al., 2022](http://dx.doi.org/10.1089/big.2022.0207))]{.small}.
 
-* **Difíciles o imposibles de reutilizar**: documentación y metadatos pobres, sin información sobre calidad o contexto [([Perrier et al., 2020](http://dx.doi.org/10.1371/journal.pone.0229182); [Mesman et al., 2024](http://dx.doi.org/10.3389/fenvs.2024.1497105); [Ugochukwu y Phillips, 2024](https://doi.org/10.1016/j.jafr.2024.101157))]{.citas}.
+* **Difíciles o imposibles de reutilizar**: documentación y metadatos pobres, sin información sobre calidad o contexto [([Perrier et al., 2020](http://dx.doi.org/10.1371/journal.pone.0229182); [Mesman et al., 2024](http://dx.doi.org/10.3389/fenvs.2024.1497105); [Ugochukwu y Phillips, 2024](https://doi.org/10.1016/j.jafr.2024.101157))]{.small}.
+:::
 
 ---
 
-## 1.6 El problema real {auto-animate="true"}
+## 1.6 El problema real {auto-animate="true" .unlisted}
 
 Además, gran parte del ecosistema de investigación está marcado por:
 
-* **Incentivos mal alineados**: la apertura se deja para el final, sin tiempo ni recursos, y compartir datos no se recompensa académicamente [([Perrier et al., 2020](http://dx.doi.org/10.1371/journal.pone.0229182); [Tedersoo et al., 2021](http://dx.doi.org/10.1038/s41597-021-00981-0); [Figueiredo, 2017](http://dx.doi.org/10.3389/fpubh.2017.00327))]{.citas}.
+::: {.incremental}
+* **Incentivos mal alineados**: la apertura se deja para el final, sin tiempo ni recursos, y compartir datos no se recompensa académicamente [([Perrier et al., 2020](http://dx.doi.org/10.1371/journal.pone.0229182); [Tedersoo et al., 2021](http://dx.doi.org/10.1038/s41597-021-00981-0); [Figueiredo, 2017](http://dx.doi.org/10.3389/fpubh.2017.00327))]{.small}.
 
-* **Software y código frágiles**: scripts no versionados, sin documentación ni empaquetado, que comprometen la descubribilidad, reproducibilidad y sostenibilidad [([Barker et al., 2022](http://dx.doi.org/10.1038/s41597-022-01710-x))]{.citas}.
+* **Software y código frágiles**: scripts no versionados, sin documentación ni empaquetado, que comprometen la descubribilidad, reproducibilidad y sostenibilidad [([Barker et al., 2022](http://dx.doi.org/10.1038/s41597-022-01710-x))]{.small}.
 
-* **Barreras legales y éticas confusas**: incertidumbre sobre privacidad, propiedad intelectual y usos indebidos lleva a no compartir o a hacerlo de forma muy restrictiva [([Schwalbach et al., 2025](https://doi.org/10.1177/20539517251325211); [Pellen et al., 2025](http://dx.doi.org/10.1016/j.jclinepi.2025.111680); [Figueiredo, 2017](http://dx.doi.org/10.3389/fpubh.2017.00327))]{.citas}.
-
-
-
+* **Barreras legales y éticas confusas**: incertidumbre sobre privacidad, propiedad intelectual y usos indebidos lleva a no compartir o a hacerlo de forma muy restrictiva [([Schwalbach et al., 2025](https://doi.org/10.1177/20539517251325211); [Pellen et al., 2025](http://dx.doi.org/10.1016/j.jclinepi.2025.111680); [Figueiredo, 2017](http://dx.doi.org/10.3389/fpubh.2017.00327))]{.small}.
+:::
 
 
-# [Parte 2 · Idea central]{auto-animate="true"}
 
----
 
-## Abrir no es publicar al final {auto-animate="true"}
-
-- La apertura es una **decisión de diseño**
-- Afecta cómo:
-  - pensamos el estudio
-  - analizamos los datos
-  - comunicamos resultados
+# [Parte 2 · Aplicación]{auto-animate="true"}
 
 ---
 
-## ¿Qué es realmente un protocolo?{auto-animate="true"}
+## 2.1 ¿Tu protocolo es FAIR? {auto-animate="true"}
 
-- No es solo un preregistro
-- Es un **contrato metodológico**
-- Define:
-  - qué cuenta como dato
-  - qué análisis son válidos
-  - qué decisiones se permiten
-
----
-
-## Protocolos bien diseñados
-
-- Decisiones explícitas
-- Separar:
-  - teoría
-  - técnica
-- Versionado
-- Trazabilidad de cambios
+::: {.small-list .incremental}
+- [ ] [Planificación FAIR desde el diseño del estudio]{auto-animate="true"} [([1]; [11]; [17])]{.small}  
+  [*Ej.: estructura de carpetas y esquema de nombres definidos antes de recolectar datos.*]{.small}
+- [ ] Metadatos obligatorios y estándares definidos [([1]; [16]; [18])]{.small}  
+  [*Ej.: README + variables descritas con un esquema tipo [DataCite](https://datacite.org).*]{.small}
+- [ ] Identificadores persistentes (DOI para datos, ORCID para autores) [([1]; [14])]{.small}  
+  [*Ej.: dataset con DOI en [Zenodo](https://zenodo.org)/[OSF](https://osf.io) y autores con [ORCID](https://orcid.org) enlazado.*]{.small}
+- [ ] Reglas claras de acceso y licencias [([4]; [7]; [16])]{.small}  
+  [*Ej.: datos abiertos bajo CC BY 4.0 u otras licencias [Creative Commons](https://co.creativecommons.net/tipos-de-licencias/); excepciones documentadas.*]{.small}
+- [ ] Uso de formatos abiertos y estructurados [([1]; [11]; [18])]{.small}  
+  [*Ej.: datos tabulares en CSV; metadatos en JSON.*]{.small}
+- [ ] Interoperabilidad semántica (ontologías, vocabularios controlados) [([1]; [14]; [16])]{.small}  
+  [*Ej.: “sexo” codificado según una ontología estándar, no como texto libre.*]{.small}
+:::
 
 ---
 
-## Protocolos y FAIR
+## 2.1 ¿Tu protocolo es FAIR? {auto-animate="true" .unlisted}
 
-- **Findable**: existe y se puede localizar
-- **Reusable**: se entiende por qué se decidió lo que se decidió
+::: {.small-list}
+- [ ] [Planificación FAIR desde el diseño del estudio]{auto-animate="true"} [([1]; [11]; [17])]{.small}  
+  [*Ej.: estructura de carpetas y esquema de nombres definidos antes de recolectar datos.*]{.small}
+:::
 
----
+**Ejemplo: estructura de proyecto FAIR**
 
-## Código abierto
+```text
+project/
+├─ README.md
+├─ LICENSE
+├─ metadata/
+├─ data_raw/
+├─ data_processed/
+├─ code/
+├─ results/
+└─ docs/
+```
 
-### Código abierto ≠ subir scripts
-
-- El código es **parte del método**
-- Código sin estructura ≠ transparencia
-
----
-
-## Buenas prácticas mínimas
-
-- Un script = una tarea clara
-- Separar:
-  - datos crudos
-  - datos procesados
-  - análisis
-- README explicativo
-- Flujo ejecutable
-
----
-
-## Código ejecutable
-
-> El código no se abre para ser leído,  
-> se abre para ser ejecutado
-
-- Punto de entrada claro
-- Sin pasos manuales ocultos
-- Rutas relativas
-- Automatización mínima
+::: {.tiny}
+**Estructura y reproducibilidad:**  [Wilson et al., 2016](https://doi.org/10.1371/journal.pcbi.1005510); [Noble, 2009](https://doi.org/10.1371/journal.pcbi.1000424); [Klein et al., 2018](https://doi.org/10.1525/collabra.158)<br>
+**Licencias y gobernanza del proyecto:**  [Klein et al., 2018](https://doi.org/10.1525/collabra.158)<br>
+**Metadatos y datos (documentación, trazabilidad y preservación):**  [Spreckelsen et al., 2020](https://doi.org/10.3390/data5020043); [Pacharra et al., 2025](https://doi.org/10.5334/dsj-2025-002); [Engstfeld et al., 2025](https://doi.org/10.5334/dsj-2025-013); [Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Fouad et al., 2024](https://doi.org/10.1016/j.expneurol.2024.114815)<br>
+**Código, resultados y protocolos reproducibles:** [Wilson et al., 2016](https://doi.org/10.1371/journal.pcbi.1005510); 
+[Noble, 2009](https://doi.org/10.1371/journal.pcbi.1000424); [Visentin et al., 2024](https://doi.org/10.12688/f1000research.157325.2); [Cunha-Oliveira et al., 2024](https://doi.org/10.1152/physrev.00043.2023); [Kanza et al., 2022](https://doi.org/10.1186/s13104-022-05908-5); [Klein et al., 2018](https://doi.org/10.1525/collabra.158)
+:::
 
 ---
 
-## Datos abiertos
+## 2.1 ¿Tu protocolo es FAIR? {auto-animate="true" .unlisted}
 
-### Abrir sin dañar
+::: {.small-list}
+- [ ] [Planificación FAIR desde el diseño del estudio]{auto-animate="true"} [([1]; [11]; [17])]{.small}  
+  [*Ej.: estructura de carpetas y esquema de nombres definidos antes de recolectar datos.*]{.small}
+:::
+  
+**Ejemplo: convenciones para nombrar archivos**
+  
+> `sub-001_session-01_task-rest_bold.nii.gz` en vez de `final2.nii`
 
-- Privacidad
-- Consentimiento
-- Poblaciones vulnerables
-- Datos sensibles
-
----
-
-## Datos *machine-readable*
-
-### Qué significa
-
-- Interpretables automáticamente
-- Sin decisiones humanas implícitas
-- Estructura clara:
-  - filas = observaciones
-  - columnas = variables
+::: {.small-list}
+- nombres descriptivos y consistentes [([Spreckelsen et al., 2020](https://doi.org/10.3390/data5020043); [Noble, 2009](https://doi.org/10.1371/journal.pcbi.1000424); [Fouad et al., 2024](https://doi.org/10.1016/j.expneurol.2024.114815))]{.small}
+- sin espacios ni caracteres especiales [([Spreckelsen et al., 2020](https://doi.org/10.3390/data5020043); [Wörden et al., 2024](https://doi.org/10.3390/data9020024); [Fouad et al., 2024](https://doi.org/10.1016/j.expneurol.2024.114815))]{.small}
+  - fechas en formato ISO (YYYY-MM-DD)
+- pocos niveles de carpetas [([Spreckelsen et al., 2020](https://doi.org/10.3390/data5020043); [Wörden et al., 2024](https://doi.org/10.3390/data9020024); [Fouad et al., 2024](https://doi.org/10.1016/j.expneurol.2024.114815))]{.small}
+:::
 
 ---
 
-## Excel vs CSV
+## 2.1 ¿Tu protocolo es FAIR? {auto-animate="true" .unlisted}
 
-### El problema no es Excel, es el diseño
+::: {.small-list}
+- [x] [Planificación FAIR desde el diseño del estudio]{auto-animate="true"} [([1]; [11]; [17])]{.small}  
+  [*Ej.: estructura de carpetas y esquema de nombres definidos antes de recolectar datos.*]{.small}
+- [ ] Metadatos obligatorios y estándares definidos [([1]; [16]; [18])]{.small}  
+  [*Ej.: README + variables descritas con un esquema tipo [DataCite](https://datacite.org).*]{.small}
+- [ ] Identificadores persistentes (DOI para datos, ORCID para autores) [([1]; [14])]{.small}  
+  [*Ej.: dataset con DOI en [Zenodo](https://zenodo.org)/[OSF](https://osf.io) y autores con [ORCID](https://orcid.org) enlazado.*]{.small}
+- [ ] Reglas claras de acceso y licencias [([4]; [7]; [16])]{.small}  
+  [*Ej.: datos abiertos bajo CC BY 4.0 u otras licencias [Creative Commons](https://co.creativecommons.net/tipos-de-licencias/); excepciones documentadas.*]{.small}
+- [ ] Uso de formatos abiertos y estructurados [([1]; [11]; [18])]{.small}  
+  [*Ej.: datos tabulares en CSV; metadatos en JSON.*]{.small}
+- [ ] Interoperabilidad semántica (ontologías, vocabularios controlados) [([1]; [14]; [16])]{.small}  
+  [*Ej.: “sexo” codificado según una ontología estándar, no como texto libre.*]{.small}
+:::
 
+---
+
+## 2.1 ¿Tu protocolo es FAIR? {auto-animate="true" .unlisted}
+
+::: {.small-list}
+- [ ] Metadatos obligatorios y estándares definidos [([1]; [16]; [18])]{.small}  
+  [*Ej.: README + variables descritas con un esquema tipo [DataCite](https://datacite.org).*]{.small}
+:::
+  
+::: {.small-list}
+- Descripción y propósito del proyecto → Qué hace y qué problema resuelve.  
+[Muchos READMEs explican el *qué* y el *cómo*, pero omiten el propósito y el estado del proyecto ([Prana et al., 2019](https://doi.org/10.1007/s10664-018-9660-3))]{.tiny}
+- Instalación y primer uso → Pasos claros de instalación + ejemplo mínimo funcional.  
+[READMEs con instrucciones de instalación y uso se asocian con proyectos más populares ([Liu et al., 2022](http://dx.doi.org/10.1016/j.infsof.2022.106924))]{.tiny}.
+- Estructura del repositorio y enlaces clave → Mapa básico de carpetas/archivos importantes y enlaces a documentación externa.  
+[Incluir fragmentos de código y enlaces a recursos visuales se relaciona con más visibilidad ([Liu et al., 2022](http://dx.doi.org/10.1016/j.infsof.2022.106924))]{.tiny}.
+- Estado, mantenimiento y licencia →  Indicar licencia y si el proyecto está activo.  
+[La información de licencia es uno de los contenidos más frecuentes y valorados en software ([Ikeda et al., 2018](http://dx.doi.org/10.1587/transinf.2018edp7071))]{.tiny}.
+- Cómo contribuir o pedir ayuda → Pautas mínimas para contribuciones y canales de soporte (issues, email, foro).  
+[Directrices de contribución y referencias se asocian con mayor popularidad del proyecto ([Venigalla et al., 2022](http://dx.doi.org/10.48550/arxiv.2206.10772))]{.tiny}.
+:::
+
+---
+
+## 2.1 ¿Tu protocolo es FAIR? {auto-animate="true" .unlisted}
+
+::: {.small-list}
+- [x] [Planificación FAIR desde el diseño del estudio]{auto-animate="true"} [([1]; [11]; [17])]{.small}  
+  [*Ej.: estructura de carpetas y esquema de nombres definidos antes de recolectar datos.*]{.small}
+- [X] Metadatos obligatorios y estándares definidos [([1]; [16]; [18])]{.small}  
+  [*Ej.: README + variables descritas con un esquema tipo [DataCite](https://datacite.org).*]{.small}
+- [ ] Identificadores persistentes (DOI para datos, ORCID para autores) [([1]; [14])]{.small}  
+  [*Ej.: dataset con DOI en [Zenodo](https://zenodo.org)/[OSF](https://osf.io) y autores con [ORCID](https://orcid.org) enlazado.*]{.small}
+- [ ] Reglas claras de acceso y licencias [([4]; [7]; [16])]{.small}  
+  [*Ej.: datos abiertos bajo CC BY 4.0 u otras licencias [Creative Commons](https://co.creativecommons.net/tipos-de-licencias/); excepciones documentadas.*]{.small}
+- [ ] Uso de formatos abiertos y estructurados [([1]; [11]; [18])]{.small}  
+  [*Ej.: datos tabulares en CSV; metadatos en JSON.*]{.small}
+- [ ] Interoperabilidad semántica (ontologías, vocabularios controlados) [([1]; [14]; [16])]{.small}  
+  [*Ej.: “sexo” codificado según una ontología estándar, no como texto libre.*]{.small}
+:::
+
+---
+
+## 2.1 ¿Tu protocolo es FAIR? {auto-animate="true" .unlisted}
+
+::: {.small-list}
+- [x] [Planificación FAIR desde el diseño del estudio]{auto-animate="true"} [([1]; [11]; [17])]{.small}  
+  [*Ej.: estructura de carpetas y esquema de nombres definidos antes de recolectar datos.*]{.small}
+- [X] Metadatos obligatorios y estándares definidos [([1]; [16]; [18])]{.small}  
+  [*Ej.: README + variables descritas con un esquema tipo [DataCite](https://datacite.org).*]{.small}
+- [x] Identificadores persistentes (DOI para datos, ORCID para autores) [([1]; [14])]{.small}  
+  [*Ej.: dataset con DOI en [Zenodo](https://zenodo.org)/[OSF](https://osf.io) y autores con [ORCID](https://orcid.org) enlazado.*]{.small}
+- [ ] Reglas claras de acceso y licencias [([4]; [7]; [16])]{.small}  
+  [*Ej.: datos abiertos bajo CC BY 4.0 u otras licencias [Creative Commons](https://co.creativecommons.net/tipos-de-licencias/); excepciones documentadas.*]{.small}
+- [ ] Uso de formatos abiertos y estructurados [([1]; [11]; [18])]{.small}  
+  [*Ej.: datos tabulares en CSV; metadatos en JSON.*]{.small}
+- [ ] Interoperabilidad semántica (ontologías, vocabularios controlados) [([1]; [14]; [16])]{.small}  
+  [*Ej.: “sexo” codificado según una ontología estándar, no como texto libre.*]{.small}
+:::
+
+---
+
+## 2.1 ¿Tu protocolo es FAIR? {auto-animate="true" .unlisted}
+
+::: {.small-list}
+- [x] [Planificación FAIR desde el diseño del estudio]{auto-animate="true"} [([1]; [11]; [17])]{.small}  
+  [*Ej.: estructura de carpetas y esquema de nombres definidos antes de recolectar datos.*]{.small}
+- [X] Metadatos obligatorios y estándares definidos [([1]; [16]; [18])]{.small}  
+  [*Ej.: README + variables descritas con un esquema tipo [DataCite](https://datacite.org).*]{.small}
+- [x] Identificadores persistentes (DOI para datos, ORCID para autores) [([1]; [14])]{.small}  
+  [*Ej.: dataset con DOI en [Zenodo](https://zenodo.org)/[OSF](https://osf.io) y autores con [ORCID](https://orcid.org) enlazado.*]{.small}
+- [x] Reglas claras de acceso y licencias [([4]; [7]; [16])]{.small}  
+  [*Ej.: datos abiertos bajo CC BY 4.0 u otras licencias [Creative Commons](https://co.creativecommons.net/tipos-de-licencias/); excepciones documentadas.*]{.small}
+- [ ] Uso de formatos abiertos y estructurados [([1]; [11]; [18])]{.small}  
+  [*Ej.: datos tabulares en CSV; metadatos en JSON.*]{.small}
+- [ ] Interoperabilidad semántica (ontologías, vocabularios controlados) [([1]; [14]; [16])]{.small}  
+  [*Ej.: “sexo” codificado según una ontología estándar, no como texto libre.*]{.small}
+:::
+
+---
+
+## 2.1 ¿Tu protocolo es FAIR? {auto-animate="true" .unlisted}
+
+::: {.small-list}
+- [ ] Uso de formatos abiertos y estructurados [([1]; [11]; [18])]{.small}  
+  [*Ej.: datos tabulares en CSV; metadatos en JSON.*]{.small}
+:::
+
+### Excel vs CSV
+
+:::: {.columns}
+
+::: {.column width="50%"}
 Excel permite:
-- celdas fusionadas
-- múltiples encabezados
-- formato visual
-- ambigüedad estructural
+
+::: {.small-list}
+- Celdas fusionadas
+- Múltiples encabezados
+- Formato visual
+- Ambigüedad estructural
+:::
+:::
+
+::: {.column width="50%"}
+![](images/excel_mal.png){fig-align="left" width="75%"}
+:::
+
+::::
 
 ---
 
-## CSV como decisión de diseño
+## 2.1 ¿Tu protocolo es FAIR? {auto-animate="true" .unlisted}
 
+::: {.small-list}
+- [ ] Uso de formatos abiertos y estructurados [([1]; [11]; [18])]{.small}  
+  [*Ej.: datos tabulares en CSV; metadatos en JSON.*]{.small}
+:::
+
+### Excel vs CSV
+
+:::: {.columns}
+
+::: {.column width="50%"}
+Excel permite:
+
+::: {.small-list}
+- Celdas fusionadas
+- Múltiples encabezados
+- Formato visual
+- Ambigüedad estructural
+:::
+:::
+
+::: {.column width="50%"}
+CSV es:
+
+::: {.small-list}
 - Formato abierto
 - Sin elementos visuales
 - Estructura tabular explícita
 - Previene errores antes de que ocurran
+:::
+:::
 
-> La estética no es metadato
-
----
-
-## FAIR y datos
-
-- **Accessible** ≠ “abre en mi computador”
-- **Interoperable** ≠ “yo sé cómo leerlo”
-- **Reusable** requiere contexto y estructura
+::::
 
 ---
 
-## Proc B como ejemplo
+## 2.1 ¿Tu protocolo es FAIR? {auto-animate="true" .unlisted}
 
-### No como revista, sino como modelo
+::: {.small-list}
+- [ ] Uso de formatos abiertos y estructurados [([1]; [11]; [18])]{.small}  
+  [*Ej.: datos tabulares en CSV; metadatos en JSON.*]{.small}
+:::
+
+### Excel vs CSV
+
+:::: {.columns}
+
+::: {.column width="50%"}
+CSV es:
+
+::: {.small-list}
+- Formato abierto
+- Sin elementos visuales
+- Estructura tabular explícita
+- Previene errores antes de que ocurran
+:::
+:::
+
+::: {.column width="50%"}
+![](images/excel_bien.png){fig-align="left" width="75%"}
+:::
+
+::::
+
+---
+
+## 2.1 ¿Tu protocolo es FAIR? {auto-animate="true" .unlisted}
+
+::: {.small-list}
+- [ ] Uso de formatos abiertos y estructurados [([1]; [11]; [18])]{.small}  
+  [*Ej.: datos tabulares en CSV; metadatos en JSON.*]{.small}
+:::
+
+### Excel vs CSV
+
+:::: {.columns}
+
+::: {.column width="55%"}
+CSV es:
+
+::: {.small-list}
+- Estructura tabular explícita
+  - Una fila = una observación
+  - Una columna = una variable
+  - Sin notas mezcladas con los datos
+:::
+:::
+
+::: {.column width="45%"}
+![](images/excel_bien.png){fig-align="left" width="75%"}
+:::
+
+::::
+
+---
+
+## 2.1 ¿Tu protocolo es FAIR? {auto-animate="true" .unlisted}
+
+::: {.small-list}
+- [x] [Planificación FAIR desde el diseño del estudio]{auto-animate="true"} [([1]; [11]; [17])]{.small}  
+  [*Ej.: estructura de carpetas y esquema de nombres definidos antes de recolectar datos.*]{.small}
+- [X] Metadatos obligatorios y estándares definidos [([1]; [16]; [18])]{.small}  
+  [*Ej.: README + variables descritas con un esquema tipo [DataCite](https://datacite.org).*]{.small}
+- [x] Identificadores persistentes (DOI para datos, ORCID para autores) [([1]; [14])]{.small}  
+  [*Ej.: dataset con DOI en [Zenodo](https://zenodo.org)/[OSF](https://osf.io) y autores con [ORCID](https://orcid.org) enlazado.*]{.small}
+- [x] Reglas claras de acceso y licencias [([4]; [7]; [16])]{.small}  
+  [*Ej.: datos abiertos bajo CC BY 4.0 u otras licencias [Creative Commons](https://co.creativecommons.net/tipos-de-licencias/); excepciones documentadas.*]{.small}
+- [x] Uso de formatos abiertos y estructurados [([1]; [11]; [18])]{.small}  
+  [*Ej.: datos tabulares en CSV; metadatos en JSON.*]{.small}
+- [ ] Interoperabilidad semántica (ontologías, vocabularios controlados) [([1]; [14]; [16])]{.small}  
+  [*Ej.: “sexo” codificado según una ontología estándar, no como texto libre.*]{.small}
+:::
+
+---
+
+## 2.1 ¿Tu protocolo es FAIR? {auto-animate="true" .unlisted}
+
+::: {.small-list}
+- [x] [Planificación FAIR desde el diseño del estudio]{auto-animate="true"} [([1]; [11]; [17])]{.small}  
+  [*Ej.: estructura de carpetas y esquema de nombres definidos antes de recolectar datos.*]{.small}
+- [X] Metadatos obligatorios y estándares definidos [([1]; [16]; [18])]{.small}  
+  [*Ej.: README + variables descritas con un esquema tipo [DataCite](https://datacite.org).*]{.small}
+- [x] Identificadores persistentes (DOI para datos, ORCID para autores) [([1]; [14])]{.small}  
+  [*Ej.: dataset con DOI en [Zenodo](https://zenodo.org)/[OSF](https://osf.io) y autores con [ORCID](https://orcid.org) enlazado.*]{.small}
+- [x] Reglas claras de acceso y licencias [([4]; [7]; [16])]{.small}  
+  [*Ej.: datos abiertos bajo CC BY 4.0 u otras licencias [Creative Commons](https://co.creativecommons.net/tipos-de-licencias/); excepciones documentadas.*]{.small}
+- [x] Uso de formatos abiertos y estructurados [([1]; [11]; [18])]{.small}  
+  [*Ej.: datos tabulares en CSV; metadatos en JSON.*]{.small}
+- [x] Interoperabilidad semántica (ontologías, vocabularios controlados) [([1]; [14]; [16])]{.small}  
+  [*Ej.: “sexo” codificado según una ontología estándar, no como texto libre.*]{.small}
+:::
+
+---
+
+## 2.2 Proc B como ejemplo
+
+![](images/logo_Proc-B.png){fig-align="center" width="20%"}
 
 - Datos, código y README son **evaluables**
 - Reproducibilidad computacional mínima
 - Excepciones éticas explícitas
-- Documentación central
 
----
+::::: {.small .incremental}
 
-## El rol del README
+:::: {.columns}
 
-- Más importante que el archivo de datos
+::: {.column width="50%"}
+**El rol del README**
+
+- Más importante que el archivo de datos 
 - Conecta:
-  - protocolo
-  - datos
-  - código
+  - protocolo / datos / código
 - Permite reutilización real
+:::
 
----
-
-## Reproducibilidad razonable
-
-> No es replicación total  
-> es **ejecución sin fricción**
+::: {.column width="50%"}
+**Reproducibilidad razonable**
 
 - El código corre
 - Los datos cargan
 - El flujo tiene sentido
+:::
+
+::::
+
+:::::
 
 ---
 
-## Cierre
+## 2.3 Recomendaciones generales
 
-### Una regla simple
+::::: {.small .incremental}
 
-> Si no entiendo mi propio proyecto en 6 meses  
-> sin explicaciones extra, no está listo para ser abierto
+:::: {.columns}
+
+::: {.column width="50%"}
+**Código y datos reproducibles**
+
+> El código se abre **para correrlo**, no para leerlo
+
+- Sin pasos manuales ocultos  
+- Rutas relativas  
+- Automatización mínima reproducible  
+
+[**Datos abiertos sin dañar**]{.fragment}
+
+- Privacidad y consentimiento  
+- Poblaciones vulnerables  
+- Datos sensibles ≠ datos cerrados  
+  *(acceso y documentación importan)*  
+:::
+
+::: {.column width="50%"}
+[**Datos *machine-readable***]{.fragment}
+
+- Interpretables automáticamente  
+- Sin decisiones humanas implícitas  
+- Estructura clara:
+  - filas = observaciones  
+  - columnas = variables
+- Formato abierto (e.g., CSV)
+
+[**FAIR no es intuición personal**]{.fragment}
+
+- Accessible ≠ “abre en mi computador”  
+- Interoperable ≠ “yo sé cómo leerlo”  
+- Reusable requiere:
+  - estructura  
+  - documentación
+:::
+
+::::
+
+:::::
 
 ---
 
-## Mensaje final
+## ¡Gracias! {auto-animate="true"}
 
-La ciencia abierta no es un requisito administrativo  
-es **infraestructura intelectual**
+:::: columns
+::: {.column width="45%"}
+[![](images/jdl_qr.png){width="80%"}](https://jdleongomez.info/es/)
+:::
 
----
+::: {.column width="55%"}
 
-## Preguntas
+<div style="margin-top: 8em;"></div>
+
+**Juan David Leongómez** [PhD, MSc]{style="font-size: 50%;"}<br> [[jleongomez\@unbosque.edu.co](mailto:jleongomez@unbosque.edu.co)]{style="font-size: 70%;"}
+:::
+::::

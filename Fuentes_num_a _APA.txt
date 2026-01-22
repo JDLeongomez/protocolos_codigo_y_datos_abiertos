@@ -1,5 +1,5 @@
+Ideas principales
 https://consensus.app/search/importancia-de-principios-fair/AC9Z8MAzQb2IF-xPlhFP6A/
-
 
 [1] [Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18)
 [2] [Inau et al., 2022](https://doi.org/10.2196/45013)
@@ -21,3 +21,31 @@ https://consensus.app/search/importancia-de-principios-fair/AC9Z8MAzQb2IF-xPlhFP
 [18] [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008)
 [19] [Juty et al., 2020](https://doi.org/10.1162/dint_a_00025)
 [20] [Vesteghem et al., 2019](https://doi.org/10.1093/bib/bbz044)
+
+
+----
+
+Estructura y nombres de archivos y carpetas
+https://consensus.app/search/scientific-project-file-organization/UhV2UCz5SsS2TC02dR1XCg/
+
+
+[1] [Spreckelsen et al., 2020](https://doi.org/10.3390/data5020043)
+[2] [Cunha-Oliveira et al., 2024](https://doi.org/10.1152/physrev.00043.2023)
+[3] [Spreckelsen et al., 2020](https://doi.org/10.20944/preprints202004.0035.v1)
+[4] [Visentin et al., 2024](https://doi.org/10.12688/f1000research.157325.2)
+[5] [Kanza et al., 2022](https://doi.org/10.1186/s13104-022-05908-5)
+[6] [Scorza et al., 2024](https://doi.org/10.12688/wellcomeopenres.22899.1)
+[7] [Pacharra et al., 2025](https://doi.org/10.5334/dsj-2025-002)
+[8] [Chaudhry et al., 2022](https://doi.org/10.1108/gkmc-04-2022-0082)
+[9] [Wilson et al., 2016](https://doi.org/10.1371/journal.pcbi.1005510)
+[10] [Wörden et al., 2024](https://doi.org/10.3390/data9020024)
+[11] [Noble, 2009](https://doi.org/10.1371/journal.pcbi.1000424)
+[12] [Soderberg, 2018](https://doi.org/10.1177/2515245918757689)
+[13] [Fouad et al., 2024](https://doi.org/10.1016/j.expneurol.2024.114815)
+[14] [Oh, 2024](https://doi.org/10.1080/07370024.2024.2310551)
+[15] [O'Neill, 2018]()
+[16] [Klein et al., 2018](https://doi.org/10.1525/collabra.158)
+[17] [Engstfeld et al., 2025](https://doi.org/10.5334/dsj-2025-013)
+[18] [Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18)
+[19] [Alper et al., 2025](https://doi.org/10.1016/j.patter.2025.101345)
+[20] [Korir et al., 2023](https://doi.org/10.12688/f1000research.129720.2)

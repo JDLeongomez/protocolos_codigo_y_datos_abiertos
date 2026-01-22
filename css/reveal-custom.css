@@ -1,7 +1,17 @@
 /* CSS personalizado para Reveal.js */
 
-.reveal .citas {
+.reveal .small {
   font-size: 0.7em;
   opacity: 0.8;
   line-height: 1.2;
+}
+
+.reveal .tiny {
+  font-size: 0.6em;
+  opacity: 0.8;
+  line-height: 1;
+}
+
+.reveal .small-list {
+  font-size: 0.85em;
 }
