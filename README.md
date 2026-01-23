@@ -58,7 +58,6 @@ quarto render index.qmd
 ├── mathjax-config.js                         # Configuración de MathJax
 ├── protocolos_codigo_y_datos_abiertos.Rproj  # Proyecto RStudio
 ├── README.md                                 # Descripción y guía del repositorio
-├── README.html                               # Versión renderizada del README
 ├── LICENSE                                   # Licencia del contenido (CC BY 4.0)
 ├── CITATION.cff                              # Información de citación (FAIR)
 ├── CODE_OF_CONDUCT.md                        # Código de conducta
