@@ -55,9 +55,9 @@ footer: |
 
 ## 📲 Accede a las diapositivas en línea {.unlisted}
 
-[![](images/presentacion_QR.svg){fig-align="left" width="50%"}](https://jdleongomez.github.io/protocolos_codigo_y_datos_abiertos/)
+[![](images/presentacion_QR.svg){fig-align="left" width="40%"}](https://jdleongomez.github.io/protocolos_codigo_y_datos_abiertos/)
 
-::: {.aside .center}
+::: {.aside}
 ![](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg){width="22" style="vertical-align:middle; margin-right:.35em;"}Materiales (incluyendo imágenes y código) disponibles en [GitHub](https://github.com/JDLeongomez/protocolos_codigo_y_datos_abiertos)
 :::
 
@@ -77,6 +77,8 @@ footer: |
 | **A – Accessible** | Los datos se pueden descargar o consultar | Enlace funcional, permisos explícitos, acceso estable |
 | **I – Interoperable** | Los datos pueden combinarse con otros | Formatos abiertos y legibles por máquina (CSV, JSON), vocabularios estándar |
 | **R – Reusable** | Los datos pueden reutilizarse | Licencia clara (p. ej., CC-BY), documentación suficiente |
+
+👉 [<https://www.go-fair.org/fair-principles/>]{.small}
 
 ---
 
@@ -103,7 +105,7 @@ footer: |
 
 * Favorecen la interoperabilidad entre dominios mediante estándares comunes [([Tanhua et al., 2019](https://doi.org/10.3389/fmars.2019.00440); [Krisnawijaya et al., 2025](https://doi.org/10.1016/j.compag.2024.109855))]{.small}.
 
-* Sirven como marco estratégico para priorizar la FAIRificación y la preservación a largo plazo [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18))]{.small}.
+* Sirven como marco estratégico para fomentar la preservación a largo plazo [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18))]{.small}.
 
 [^1]: CARE: marco para la gobernanza ética de los datos, complementario a FAIR, centrado en pueblos indígenas y comunidades históricamente marginadas.
 :::
@@ -222,7 +224,7 @@ df_cumplimiento_fair <- tribble(
     "A, I, R < <span style='color:#b2182b;font-weight:bold;'>40 %</span>"
   ),
   "[Sixto-Costoya et al., 2025](http://dx.doi.org/10.1007/s11192-024-05227-5)",
-  "Ningún ningún tema (alcohol, tabaco, opioides, etc.) superó 30 % de cumplimiento FAIR.",
+  "Ningún tema (alcohol, tabaco, opioides, etc.) superó 30 % de cumplimiento FAIR.",
 
   "Datos educativos LATAM",
   paste0(
@@ -266,12 +268,12 @@ datatable(
 
 ## 1.6 El problema real {auto-animate="true"}
 
-El problema no es la “falta de apertura”, sino que muchos datos de investigación son:
+El problema no es la "falta de apertura", sino que muchos datos de investigación son:
 
 ::: {.incremental}
 * **Difíciles de localizar**: repositorios dispersos, sin identificadores persistentes ni metadatos adecuados, lo que impide su localización por personas y máquinas [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Kinkade et al., 2021](http://dx.doi.org/10.1002/gdj3.120); [Ugochukwu y Phillips, 2024](https://doi.org/10.1016/j.jafr.2024.101157))]{.small}.
 
-* **Formalmente abiertos, pero poco accesibles**: datos “públicos” en sitios opacos, con trámites lentos o formatos cerrados, que frenan la reutilización efectiva [([Schwalbach et al., 2025](https://doi.org/10.1177/20539517251325211); [Pellen et al., 2025](http://dx.doi.org/10.1016/j.jclinepi.2025.111680); [Mesman et al., 2024](http://dx.doi.org/10.3389/fenvs.2024.1497105))]{.small}.
+* **Formalmente abiertos, pero poco accesibles**: datos "públicos" en sitios opacos, con trámites lentos o formatos cerrados, que frenan la reutilización efectiva [([Schwalbach et al., 2025](https://doi.org/10.1177/20539517251325211); [Pellen et al., 2025](http://dx.doi.org/10.1016/j.jclinepi.2025.111680); [Mesman et al., 2024](http://dx.doi.org/10.3389/fenvs.2024.1497105))]{.small}.
 :::
 
 ::: {.fragment .fade-in}
@@ -282,7 +284,7 @@ El problema no es la “falta de apertura”, sino que muchos datos de investiga
 
 ## 1.6 El problema real {auto-animate="true" .unlisted}
 
-El problema no es la “falta de apertura”, sino que muchos datos de investigación son:
+El problema no es la "falta de apertura", sino que muchos datos de investigación son:
 
 ::: {.incremental}
 * **Poco interoperables**: formatos, variables y terminologías idiosincráticas dificultan o impiden la comparación y combinación de estudios [([Kush et al., 2020](http://dx.doi.org/10.1016/j.jbi.2020.103421); [Inau et al., 2022](http://dx.doi.org/10.2196/45013); [Awadallah y Tammaro, 2025](http://dx.doi.org/10.1080/10572317.2025.2479280); [Martin et al., 2022](http://dx.doi.org/10.1089/big.2022.0207))]{.small}.
@@ -325,7 +327,7 @@ Además, gran parte del ecosistema de investigación está marcado por:
 - [ ] Uso de formatos abiertos y estructurados [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
   [*Ej.: datos tabulares en CSV; metadatos en JSON.*]{.small}
 - [ ] Interoperabilidad semántica (ontologías, vocabularios controlados) [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Stracke & Evans, 2024](https://doi.org/10.1038/s42004-024-01143-0); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505))]{.small}  
-  [*Ej.: “sexo” codificado según una ontología estándar, no como texto libre.*]{.small}
+  [*Ej.: "sexo" codificado según una ontología estándar, no como texto libre.*]{.small}
 :::
 
 ---
@@ -386,7 +388,6 @@ Referencias
 - nombres descriptivos y consistentes [([Spreckelsen et al., 2020](https://doi.org/10.3390/data5020043); [Noble, 2009](https://doi.org/10.1371/journal.pcbi.1000424); [Fouad et al., 2024](https://doi.org/10.1016/j.expneurol.2024.114815))]{.small}
 - sin espacios ni caracteres especiales [([Spreckelsen et al., 2020](https://doi.org/10.3390/data5020043); [Wörden et al., 2024](https://doi.org/10.3390/data9020024); [Fouad et al., 2024](https://doi.org/10.1016/j.expneurol.2024.114815))]{.small}
   - fechas en formato ISO (YYYY-MM-DD)
-- pocos niveles de carpetas [([Spreckelsen et al., 2020](https://doi.org/10.3390/data5020043); [Wörden et al., 2024](https://doi.org/10.3390/data9020024); [Fouad et al., 2024](https://doi.org/10.1016/j.expneurol.2024.114815))]{.small}
 :::
 
 ---
@@ -405,7 +406,7 @@ Referencias
 - [ ] Uso de formatos abiertos y estructurados [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
   [*Ej.: datos tabulares en CSV; metadatos en JSON.*]{.small}
 - [ ] Interoperabilidad semántica (ontologías, vocabularios controlados) [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Stracke & Evans, 2024](https://doi.org/10.1038/s42004-024-01143-0); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505))]{.small}  
-  [*Ej.: “sexo” codificado según una ontología estándar, no como texto libre.*]{.small}
+  [*Ej.: "sexo" codificado según una ontología estándar, no como texto libre.*]{.small}
 :::
 
 ---
@@ -446,7 +447,7 @@ Referencias
 - [ ] Uso de formatos abiertos y estructurados [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
   [*Ej.: datos tabulares en CSV; metadatos en JSON.*]{.small}
 - [ ] Interoperabilidad semántica (ontologías, vocabularios controlados) [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Stracke & Evans, 2024](https://doi.org/10.1038/s42004-024-01143-0); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505))]{.small}  
-  [*Ej.: “sexo” codificado según una ontología estándar, no como texto libre.*]{.small}
+  [*Ej.: "sexo" codificado según una ontología estándar, no como texto libre.*]{.small}
 :::
 
 ---
@@ -465,7 +466,7 @@ Referencias
 - [ ] Uso de formatos abiertos y estructurados [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
   [*Ej.: datos tabulares en CSV; metadatos en JSON.*]{.small}
 - [ ] Interoperabilidad semántica (ontologías, vocabularios controlados) [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Stracke & Evans, 2024](https://doi.org/10.1038/s42004-024-01143-0); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505))]{.small}  
-  [*Ej.: “sexo” codificado según una ontología estándar, no como texto libre.*]{.small}
+  [*Ej.: "sexo" codificado según una ontología estándar, no como texto libre.*]{.small}
 :::
 
 ---
@@ -484,7 +485,7 @@ Referencias
 - [ ] Uso de formatos abiertos y estructurados [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
   [*Ej.: datos tabulares en CSV; metadatos en JSON.*]{.small}
 - [ ] Interoperabilidad semántica (ontologías, vocabularios controlados) [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Stracke & Evans, 2024](https://doi.org/10.1038/s42004-024-01143-0); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505))]{.small}  
-  [*Ej.: “sexo” codificado según una ontología estándar, no como texto libre.*]{.small}
+  [*Ej.: "sexo" codificado según una ontología estándar, no como texto libre.*]{.small}
 :::
 
 ---
@@ -630,7 +631,7 @@ CSV es:
 - [x] Uso de formatos abiertos y estructurados [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
   [*Ej.: datos tabulares en CSV; metadatos en JSON.*]{.small}
 - [ ] Interoperabilidad semántica (ontologías, vocabularios controlados) [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Stracke & Evans, 2024](https://doi.org/10.1038/s42004-024-01143-0); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505))]{.small}  
-  [*Ej.: “sexo” codificado según una ontología estándar, no como texto libre.*]{.small}
+  [*Ej.: "sexo" codificado según una ontología estándar, no como texto libre.*]{.small}
 :::
 
 ---
@@ -649,18 +650,61 @@ CSV es:
 - [x] Uso de formatos abiertos y estructurados [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
   [*Ej.: datos tabulares en CSV; metadatos en JSON.*]{.small}
 - [x] Interoperabilidad semántica (ontologías, vocabularios controlados) [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Stracke & Evans, 2024](https://doi.org/10.1038/s42004-024-01143-0); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505))]{.small}  
-  [*Ej.: “sexo” codificado según una ontología estándar, no como texto libre.*]{.small}
+  [*Ej.: "sexo" codificado según una ontología estándar, no como texto libre.*]{.small}
 :::
 
 ---
 
-## 2.2 Proc B como ejemplo
+
+## 2.2 Reproducibilidad computacional: dos enfoques
+
+::::: {.small}
+
+:::: {.columns}
+
+::: {.column}
+**Documentos reproducibles**
+
+[![](images/rmarkdown.webp){height="2.5em"}](https://rmarkdown.rstudio.com)&nbsp;&nbsp;&nbsp;
+[![](images/quarto.png){height="2.5em"}](https://quarto.org)&nbsp;&nbsp;&nbsp;
+[![](images/jupyter.png){height="2.5em"}](https://jupyter.org)
+
+- texto, código y resultados integrados
+- análisis ejecutable de principio a fin
+- tablas y figuras se regeneran automáticamente
+
+Lenguajes:  
+[![](images/R.png){height="1em"}](https://www.r-project.org)&nbsp;&nbsp;&nbsp;
+[![](images/python.png){height="1em"}](https://www.python.org)&nbsp;&nbsp;&nbsp;
+[![](images/julia.svg){height="1em"}](https://julialang.org)
+:::
+
+::: {.column}
+**Sin necesidad de programar**
+
+[![](images/jamovi.png){height="2.5em"}](https://www.jamovi.org)&nbsp;&nbsp;&nbsp;
+[![](images/JASP.svg){height="2.5em"}](https://jasp-stats.org)
+
+- interfaz gráfica
+- ejecutan R en segundo plano
+- datos, análisis y resultados en un solo archivo
+
+Lenguaje (de fondo):  
+[![](images/R.png){height="1em"}](https://www.r-project.org)
+:::
+
+::::
+
+:::::
+
+---
+
+## 2.3 *Proceedings B* como ejemplo
 
 ![](images/logo_Proc-B.png){fig-align="center" width="20%"}
 
 - Datos, código y README son **evaluables**
 - Reproducibilidad computacional mínima
-- Excepciones éticas explícitas
 
 ::::: {.small .incremental}
 
@@ -689,7 +733,7 @@ CSV es:
 
 ---
 
-## 2.3 Recomendaciones generales
+## 2.4 Recomendaciones generales
 
 ::::: {.small .incremental}
 
@@ -702,14 +746,15 @@ CSV es:
 
 - Sin pasos manuales ocultos  
 - Rutas relativas  
+  - [❌ `/home/juan/proyectos/project/data/datos.csv`]{.small}
+  - [✅ `/data/datos.csv`]{.small}
 - Automatización mínima reproducible  
 
 [**Datos abiertos sin dañar**]{.fragment}
 
 - Privacidad y consentimiento  
 - Poblaciones vulnerables  
-- Datos sensibles ≠ datos cerrados  
-  *(acceso y documentación importan)*  
+ 
 :::
 
 ::: {.column width="50%"}
@@ -724,8 +769,8 @@ CSV es:
 
 [**FAIR no es intuición personal**]{.fragment}
 
-- Accessible ≠ “abre en mi computador”  
-- Interoperable ≠ “yo sé cómo leerlo”  
+- Accessible ≠ "abre en mi computador"  
+- Interoperable ≠ "yo sé cómo leerlo"  
 - Reusable requiere:
   - estructura  
   - documentación
@@ -737,9 +782,9 @@ CSV es:
 
 ---
 
-## 2.4 Ejemplos de repositorios FAIR
+## 2.5 Ejemplos de repositorios FAIR
 
-> Este repositorio aplica lo que predica 😇 [(de manera exagerada)]{.small}  
+> Este repositorio aplica lo que predica 😇 [(como ejemplo y de manera exagerada)]{.small}  
 > [(<https://github.com/JDLeongomez/protocolos_codigo_y_datos_abiertos>)]{.small}
 
 - GitHub no asigna DOIs  
@@ -747,8 +792,10 @@ CSV es:
 
 **Otros ejemplos:**
 
-- Demo project FAIR-data [(<https://github.com/Deltares-research/FAIR-data-example-project>)]{.small}  
-- Demo project FAIR-data [(<https://github.com/maehr/open-research-data-template>)]{.small}  
+- Demo project FAIR-data  
+  [(<https://github.com/Deltares-research/FAIR-data-example-project>)]{.small}  
+- GitHub Template for FAIR and Open Research Data
+  [(<https://github.com/maehr/open-research-data-template>)]{.small}  
 
 ---
 
