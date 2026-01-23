@@ -66,7 +66,7 @@ quarto render index.qmd
 
 Notas:
 - `index.qmd` es el único archivo que debe editarse para cambiar el contenido.
-- `index.html`, `index_files/` y `README.html` son archivos generados automáticamente.
+- `index.html` y `index_files/` son archivos generados automáticamente.
 - Los archivos `LICENSE`, `CITATION.cff`, `CODE_OF_CONDUCT.md` y
   `CONTRIBUTING.md` ilustran buenas prácticas de ciencia abierta.
 
