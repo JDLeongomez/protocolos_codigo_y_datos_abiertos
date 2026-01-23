@@ -62,7 +62,7 @@ quarto render index.qmd
 ├── LICENSE                                   # Licencia del contenido (CC BY 4.0)
 ├── CITATION.cff                              # Información de citación (FAIR)
 ├── CODE_OF_CONDUCT.md                        # Código de conducta
-└── CONTRIBUTING.md                           # Guía mínima de contribución
+└── CONTRIBUTING.md                           # Guía mínima de contribución 
 ```
 
 Notas:

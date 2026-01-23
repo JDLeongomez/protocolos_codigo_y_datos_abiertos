@@ -8,3 +8,4 @@ Contributions are not actively sought, but you are welcome to:
 - reuse and adapt the structure or materials for educational purposes.
 
 Please note that major feature additions or redesigns are unlikely to be merged.
+ 

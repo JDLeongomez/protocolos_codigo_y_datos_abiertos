@@ -266,12 +266,12 @@ datatable(
 
 ---
 
-## 1.6 El problema real {auto-animate="true"}
+## 1.6 El problema {auto-animate="true"}
 
 El problema no es la "falta de apertura", sino que muchos datos de investigación son:
 
 ::: {.incremental}
-* **Difíciles de localizar**: repositorios dispersos, sin identificadores persistentes ni metadatos adecuados, lo que impide su localización por personas y máquinas [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Kinkade et al., 2021](http://dx.doi.org/10.1002/gdj3.120); [Ugochukwu y Phillips, 2024](https://doi.org/10.1016/j.jafr.2024.101157))]{.small}.
+* **Difíciles de localizar**: repositorios dispersos, sin C. Identificadores persistentes ni metadatos adecuados, lo que impide su localización por personas y máquinas [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Kinkade et al., 2021](http://dx.doi.org/10.1002/gdj3.120); [Ugochukwu y Phillips, 2024](https://doi.org/10.1016/j.jafr.2024.101157))]{.small}.
 
 * **Formalmente abiertos, pero poco accesibles**: datos "públicos" en sitios opacos, con trámites lentos o formatos cerrados, que frenan la reutilización efectiva [([Schwalbach et al., 2025](https://doi.org/10.1177/20539517251325211); [Pellen et al., 2025](http://dx.doi.org/10.1016/j.jclinepi.2025.111680); [Mesman et al., 2024](http://dx.doi.org/10.3389/fenvs.2024.1497105))]{.small}.
 :::
@@ -282,7 +282,7 @@ El problema no es la "falta de apertura", sino que muchos datos de investigació
 
 ---
 
-## 1.6 El problema real {auto-animate="true" .unlisted}
+## 1.6 El problema {auto-animate="true" .unlisted}
 
 El problema no es la "falta de apertura", sino que muchos datos de investigación son:
 
@@ -294,7 +294,7 @@ El problema no es la "falta de apertura", sino que muchos datos de investigació
 
 ---
 
-## 1.6 El problema real {auto-animate="true" .unlisted}
+## 1.6 El problema {auto-animate="true" .unlisted}
 
 Además, gran parte del ecosistema de investigación está marcado por:
 
@@ -316,17 +316,17 @@ Además, gran parte del ecosistema de investigación está marcado por:
 ## 2.1 Lista de chequeo FAIR con ejemplos prácticos {auto-animate="true"}
 
 ::: {.small-list .incremental}
-- [ ] [Planificación FAIR desde el diseño del estudio]{auto-animate="true"} [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Martorana et al., 2022](https://doi.org/10.7717/peerj-cs.1038))]{.small}  
+- [ ] [A. Planificación FAIR desde el diseño del estudio]{auto-animate="true"} [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Martorana et al., 2022](https://doi.org/10.7717/peerj-cs.1038))]{.small}  
   [*Ej.: estructura de carpetas y esquema de nombres definidos antes de recolectar datos.*]{.small}
-- [ ] Metadatos obligatorios y estándares definidos [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
+- [ ] B. Metadatos obligatorios y estándares definidos [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
   [*Ej.: README + variables descritas con un esquema tipo [DataCite](https://datacite.org).*]{.small}
-- [ ] Identificadores persistentes (DOI para datos, ORCID para autores) [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Stracke & Evans, 2024](https://doi.org/10.1038/s42004-024-01143-0))]{.small}  
+- [ ] C. Identificadores persistentes (DOI para datos, ORCID para autores) [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Stracke & Evans, 2024](https://doi.org/10.1038/s42004-024-01143-0))]{.small}  
   [*Ej.: dataset con DOI en [Zenodo](https://zenodo.org)/[OSF](https://osf.io) y autores con [ORCID](https://orcid.org) enlazado.*]{.small}
-- [ ] Reglas claras de acceso y licencias [([Inau et al., 2020](https://doi.org/10.2196/22505); [McQuilton et al., 2020](https://doi.org/10.1162/dint_a_00037); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505))]{.small}  
+- [ ] D. Reglas claras de acceso y licencias [([Inau et al., 2020](https://doi.org/10.2196/22505); [McQuilton et al., 2020](https://doi.org/10.1162/dint_a_00037); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505))]{.small}  
   [*Ej.: datos abiertos bajo CC BY 4.0 u otras licencias [Creative Commons](https://co.creativecommons.net/tipos-de-licencias/); excepciones documentadas.*]{.small}
-- [ ] Uso de formatos abiertos y estructurados [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
+- [ ] E. Uso de formatos abiertos y estructurados [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
   [*Ej.: datos tabulares en CSV; metadatos en JSON.*]{.small}
-- [ ] Interoperabilidad semántica (ontologías, vocabularios controlados) [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Stracke & Evans, 2024](https://doi.org/10.1038/s42004-024-01143-0); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505))]{.small}  
+- [ ] F. Interoperabilidad semántica (ontologías, vocabularios controlados) [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Stracke & Evans, 2024](https://doi.org/10.1038/s42004-024-01143-0); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505))]{.small}  
   [*Ej.: "sexo" codificado según una ontología estándar, no como texto libre.*]{.small}
 :::
 
@@ -335,7 +335,7 @@ Además, gran parte del ecosistema de investigación está marcado por:
 ## 2.1 Lista de chequeo FAIR con ejemplos prácticos {auto-animate="true" .unlisted}
 
 ::: {.small-list}
-- [ ] [Planificación FAIR desde el diseño del estudio]{auto-animate="true"} [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Martorana et al., 2022](https://doi.org/10.7717/peerj-cs.1038))]{.small}  
+- [ ] [A. Planificación FAIR desde el diseño del estudio]{auto-animate="true"} [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Martorana et al., 2022](https://doi.org/10.7717/peerj-cs.1038))]{.small}  
   [*Ej.: estructura de carpetas y esquema de nombres definidos antes de recolectar datos.*]{.small}
 :::
 
@@ -376,7 +376,7 @@ Referencias
 ## 2.1 Lista de chequeo FAIR con ejemplos prácticos {auto-animate="true" .unlisted}
 
 ::: {.small-list}
-- [ ] [Planificación FAIR desde el diseño del estudio]{auto-animate="true"} [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Martorana et al., 2022](https://doi.org/10.7717/peerj-cs.1038))]{.small}  
+- [ ] [A. Planificación FAIR desde el diseño del estudio]{auto-animate="true"} [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Martorana et al., 2022](https://doi.org/10.7717/peerj-cs.1038))]{.small}  
   [*Ej.: estructura de carpetas y esquema de nombres definidos antes de recolectar datos.*]{.small}
 :::
   
@@ -395,17 +395,17 @@ Referencias
 ## 2.1 Lista de chequeo FAIR con ejemplos prácticos {auto-animate="true" .unlisted}
 
 ::: {.small-list}
-- [x] [Planificación FAIR desde el diseño del estudio]{auto-animate="true"} [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Martorana et al., 2022](https://doi.org/10.7717/peerj-cs.1038))]{.small}  
+- [x] [A. Planificación FAIR desde el diseño del estudio]{auto-animate="true"} [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Martorana et al., 2022](https://doi.org/10.7717/peerj-cs.1038))]{.small}  
   [*Ej.: estructura de carpetas y esquema de nombres definidos antes de recolectar datos.*]{.small}
-- [ ] Metadatos obligatorios y estándares definidos [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
+- [ ] B. Metadatos obligatorios y estándares definidos [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
   [*Ej.: README + variables descritas con un esquema tipo [DataCite](https://datacite.org).*]{.small}
-- [ ] Identificadores persistentes (DOI para datos, ORCID para autores) [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Stracke & Evans, 2024](https://doi.org/10.1038/s42004-024-01143-0))]{.small}  
+- [ ] C. Identificadores persistentes (DOI para datos, ORCID para autores) [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Stracke & Evans, 2024](https://doi.org/10.1038/s42004-024-01143-0))]{.small}  
   [*Ej.: dataset con DOI en [Zenodo](https://zenodo.org)/[OSF](https://osf.io) y autores con [ORCID](https://orcid.org) enlazado.*]{.small}
-- [ ] Reglas claras de acceso y licencias [([Inau et al., 2020](https://doi.org/10.2196/22505); [McQuilton et al., 2020](https://doi.org/10.1162/dint_a_00037); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505))]{.small}  
+- [ ] D. Reglas claras de acceso y licencias [([Inau et al., 2020](https://doi.org/10.2196/22505); [McQuilton et al., 2020](https://doi.org/10.1162/dint_a_00037); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505))]{.small}  
   [*Ej.: datos abiertos bajo CC BY 4.0 u otras licencias [Creative Commons](https://co.creativecommons.net/tipos-de-licencias/); excepciones documentadas.*]{.small}
-- [ ] Uso de formatos abiertos y estructurados [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
+- [ ] E. Uso de formatos abiertos y estructurados [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
   [*Ej.: datos tabulares en CSV; metadatos en JSON.*]{.small}
-- [ ] Interoperabilidad semántica (ontologías, vocabularios controlados) [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Stracke & Evans, 2024](https://doi.org/10.1038/s42004-024-01143-0); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505))]{.small}  
+- [ ] F. Interoperabilidad semántica (ontologías, vocabularios controlados) [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Stracke & Evans, 2024](https://doi.org/10.1038/s42004-024-01143-0); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505))]{.small}  
   [*Ej.: "sexo" codificado según una ontología estándar, no como texto libre.*]{.small}
 :::
 
@@ -414,7 +414,7 @@ Referencias
 ## 2.1 Lista de chequeo FAIR con ejemplos prácticos {auto-animate="true" .unlisted}
 
 ::: {.small-list}
-- [ ] Metadatos obligatorios y estándares definidos [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
+- [ ] B. Metadatos obligatorios y estándares definidos [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
   [*Ej.: README + variables descritas con un esquema tipo [DataCite](https://datacite.org).*]{.small}
 :::
   
@@ -436,17 +436,17 @@ Referencias
 ## 2.1 Lista de chequeo FAIR con ejemplos prácticos {auto-animate="true" .unlisted}
 
 ::: {.small-list}
-- [x] [Planificación FAIR desde el diseño del estudio]{auto-animate="true"} [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Martorana et al., 2022](https://doi.org/10.7717/peerj-cs.1038))]{.small}  
+- [x] [A. Planificación FAIR desde el diseño del estudio]{auto-animate="true"} [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Martorana et al., 2022](https://doi.org/10.7717/peerj-cs.1038))]{.small}  
   [*Ej.: estructura de carpetas y esquema de nombres definidos antes de recolectar datos.*]{.small}
-- [X] Metadatos obligatorios y estándares definidos [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
+- [X] B. Metadatos obligatorios y estándares definidos [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
   [*Ej.: README + variables descritas con un esquema tipo [DataCite](https://datacite.org).*]{.small}
-- [ ] Identificadores persistentes (DOI para datos, ORCID para autores) [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Stracke & Evans, 2024](https://doi.org/10.1038/s42004-024-01143-0))]{.small}  
+- [ ] C. Identificadores persistentes (DOI para datos, ORCID para autores) [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Stracke & Evans, 2024](https://doi.org/10.1038/s42004-024-01143-0))]{.small}  
   [*Ej.: dataset con DOI en [Zenodo](https://zenodo.org)/[OSF](https://osf.io) y autores con [ORCID](https://orcid.org) enlazado.*]{.small}
-- [ ] Reglas claras de acceso y licencias [([Inau et al., 2020](https://doi.org/10.2196/22505); [McQuilton et al., 2020](https://doi.org/10.1162/dint_a_00037); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505))]{.small}  
+- [ ] D. Reglas claras de acceso y licencias [([Inau et al., 2020](https://doi.org/10.2196/22505); [McQuilton et al., 2020](https://doi.org/10.1162/dint_a_00037); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505))]{.small}  
   [*Ej.: datos abiertos bajo CC BY 4.0 u otras licencias [Creative Commons](https://co.creativecommons.net/tipos-de-licencias/); excepciones documentadas.*]{.small}
-- [ ] Uso de formatos abiertos y estructurados [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
+- [ ] E. Uso de formatos abiertos y estructurados [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
   [*Ej.: datos tabulares en CSV; metadatos en JSON.*]{.small}
-- [ ] Interoperabilidad semántica (ontologías, vocabularios controlados) [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Stracke & Evans, 2024](https://doi.org/10.1038/s42004-024-01143-0); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505))]{.small}  
+- [ ] F. Interoperabilidad semántica (ontologías, vocabularios controlados) [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Stracke & Evans, 2024](https://doi.org/10.1038/s42004-024-01143-0); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505))]{.small}  
   [*Ej.: "sexo" codificado según una ontología estándar, no como texto libre.*]{.small}
 :::
 
@@ -455,17 +455,17 @@ Referencias
 ## 2.1 Lista de chequeo FAIR con ejemplos prácticos {auto-animate="true" .unlisted}
 
 ::: {.small-list}
-- [x] [Planificación FAIR desde el diseño del estudio]{auto-animate="true"} [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Martorana et al., 2022](https://doi.org/10.7717/peerj-cs.1038))]{.small}  
+- [x] [A. Planificación FAIR desde el diseño del estudio]{auto-animate="true"} [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Martorana et al., 2022](https://doi.org/10.7717/peerj-cs.1038))]{.small}  
   [*Ej.: estructura de carpetas y esquema de nombres definidos antes de recolectar datos.*]{.small}
-- [X] Metadatos obligatorios y estándares definidos [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
+- [X] B. Metadatos obligatorios y estándares definidos [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
   [*Ej.: README + variables descritas con un esquema tipo [DataCite](https://datacite.org).*]{.small}
-- [x] Identificadores persistentes (DOI para datos, ORCID para autores) [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Stracke & Evans, 2024](https://doi.org/10.1038/s42004-024-01143-0))]{.small}  
+- [x] C. Identificadores persistentes (DOI para datos, ORCID para autores) [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Stracke & Evans, 2024](https://doi.org/10.1038/s42004-024-01143-0))]{.small}  
   [*Ej.: dataset con DOI en [Zenodo](https://zenodo.org)/[OSF](https://osf.io) y autores con [ORCID](https://orcid.org) enlazado.*]{.small}
-- [ ] Reglas claras de acceso y licencias [([Inau et al., 2020](https://doi.org/10.2196/22505); [McQuilton et al., 2020](https://doi.org/10.1162/dint_a_00037); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505))]{.small}  
+- [ ] D. Reglas claras de acceso y licencias [([Inau et al., 2020](https://doi.org/10.2196/22505); [McQuilton et al., 2020](https://doi.org/10.1162/dint_a_00037); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505))]{.small}  
   [*Ej.: datos abiertos bajo CC BY 4.0 u otras licencias [Creative Commons](https://co.creativecommons.net/tipos-de-licencias/); excepciones documentadas.*]{.small}
-- [ ] Uso de formatos abiertos y estructurados [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
+- [ ] E. Uso de formatos abiertos y estructurados [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
   [*Ej.: datos tabulares en CSV; metadatos en JSON.*]{.small}
-- [ ] Interoperabilidad semántica (ontologías, vocabularios controlados) [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Stracke & Evans, 2024](https://doi.org/10.1038/s42004-024-01143-0); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505))]{.small}  
+- [ ] F. Interoperabilidad semántica (ontologías, vocabularios controlados) [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Stracke & Evans, 2024](https://doi.org/10.1038/s42004-024-01143-0); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505))]{.small}  
   [*Ej.: "sexo" codificado según una ontología estándar, no como texto libre.*]{.small}
 :::
 
@@ -474,17 +474,17 @@ Referencias
 ## 2.1 Lista de chequeo FAIR con ejemplos prácticos {auto-animate="true" .unlisted}
 
 ::: {.small-list}
-- [x] [Planificación FAIR desde el diseño del estudio]{auto-animate="true"} [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Martorana et al., 2022](https://doi.org/10.7717/peerj-cs.1038))]{.small}  
+- [x] [A. Planificación FAIR desde el diseño del estudio]{auto-animate="true"} [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Martorana et al., 2022](https://doi.org/10.7717/peerj-cs.1038))]{.small}  
   [*Ej.: estructura de carpetas y esquema de nombres definidos antes de recolectar datos.*]{.small}
-- [X] Metadatos obligatorios y estándares definidos [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
+- [X] B. Metadatos obligatorios y estándares definidos [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
   [*Ej.: README + variables descritas con un esquema tipo [DataCite](https://datacite.org).*]{.small}
-- [x] Identificadores persistentes (DOI para datos, ORCID para autores) [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Stracke & Evans, 2024](https://doi.org/10.1038/s42004-024-01143-0))]{.small}  
+- [x] C. Identificadores persistentes (DOI para datos, ORCID para autores) [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Stracke & Evans, 2024](https://doi.org/10.1038/s42004-024-01143-0))]{.small}  
   [*Ej.: dataset con DOI en [Zenodo](https://zenodo.org)/[OSF](https://osf.io) y autores con [ORCID](https://orcid.org) enlazado.*]{.small}
-- [x] Reglas claras de acceso y licencias [([Inau et al., 2020](https://doi.org/10.2196/22505); [McQuilton et al., 2020](https://doi.org/10.1162/dint_a_00037); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505))]{.small}  
+- [x] D. Reglas claras de acceso y licencias [([Inau et al., 2020](https://doi.org/10.2196/22505); [McQuilton et al., 2020](https://doi.org/10.1162/dint_a_00037); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505))]{.small}  
   [*Ej.: datos abiertos bajo CC BY 4.0 u otras licencias [Creative Commons](https://co.creativecommons.net/tipos-de-licencias/); excepciones documentadas.*]{.small}
-- [ ] Uso de formatos abiertos y estructurados [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
+- [ ] E. Uso de formatos abiertos y estructurados [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
   [*Ej.: datos tabulares en CSV; metadatos en JSON.*]{.small}
-- [ ] Interoperabilidad semántica (ontologías, vocabularios controlados) [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Stracke & Evans, 2024](https://doi.org/10.1038/s42004-024-01143-0); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505))]{.small}  
+- [ ] F. Interoperabilidad semántica (ontologías, vocabularios controlados) [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Stracke & Evans, 2024](https://doi.org/10.1038/s42004-024-01143-0); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505))]{.small}  
   [*Ej.: "sexo" codificado según una ontología estándar, no como texto libre.*]{.small}
 :::
 
@@ -493,7 +493,7 @@ Referencias
 ## 2.1 Lista de chequeo FAIR con ejemplos prácticos {auto-animate="true" .unlisted}
 
 ::: {.small-list}
-- [ ] Uso de formatos abiertos y estructurados [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
+- [ ] E. Uso de formatos abiertos y estructurados [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
   [*Ej.: datos tabulares en CSV; metadatos en JSON.*]{.small}
 :::
 
@@ -523,7 +523,7 @@ Excel permite:
 ## 2.1 Lista de chequeo FAIR con ejemplos prácticos {auto-animate="true" .unlisted}
 
 ::: {.small-list}
-- [ ] Uso de formatos abiertos y estructurados [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
+- [ ] E. Uso de formatos abiertos y estructurados [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
   [*Ej.: datos tabulares en CSV; metadatos en JSON.*]{.small}
 :::
 
@@ -560,7 +560,7 @@ CSV es:
 ## 2.1 Lista de chequeo FAIR con ejemplos prácticos {auto-animate="true" .unlisted}
 
 ::: {.small-list}
-- [ ] Uso de formatos abiertos y estructurados [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
+- [ ] E. Uso de formatos abiertos y estructurados [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
   [*Ej.: datos tabulares en CSV; metadatos en JSON.*]{.small}
 :::
 
@@ -590,7 +590,7 @@ CSV es:
 ## 2.1 Lista de chequeo FAIR con ejemplos prácticos {auto-animate="true" .unlisted}
 
 ::: {.small-list}
-- [ ] Uso de formatos abiertos y estructurados [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
+- [ ] E. Uso de formatos abiertos y estructurados [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
   [*Ej.: datos tabulares en CSV; metadatos en JSON.*]{.small}
 :::
 
@@ -620,17 +620,17 @@ CSV es:
 ## 2.1 Lista de chequeo FAIR con ejemplos prácticos {auto-animate="true" .unlisted}
 
 ::: {.small-list}
-- [x] [Planificación FAIR desde el diseño del estudio]{auto-animate="true"} [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Martorana et al., 2022](https://doi.org/10.7717/peerj-cs.1038))]{.small}  
+- [x] [A. Planificación FAIR desde el diseño del estudio]{auto-animate="true"} [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Martorana et al., 2022](https://doi.org/10.7717/peerj-cs.1038))]{.small}  
   [*Ej.: estructura de carpetas y esquema de nombres definidos antes de recolectar datos.*]{.small}
-- [X] Metadatos obligatorios y estándares definidos [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
+- [X] B. Metadatos obligatorios y estándares definidos [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
   [*Ej.: README + variables descritas con un esquema tipo [DataCite](https://datacite.org).*]{.small}
-- [x] Identificadores persistentes (DOI para datos, ORCID para autores) [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Stracke & Evans, 2024](https://doi.org/10.1038/s42004-024-01143-0))]{.small}  
+- [x] C. Identificadores persistentes (DOI para datos, ORCID para autores) [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Stracke & Evans, 2024](https://doi.org/10.1038/s42004-024-01143-0))]{.small}  
   [*Ej.: dataset con DOI en [Zenodo](https://zenodo.org)/[OSF](https://osf.io) y autores con [ORCID](https://orcid.org) enlazado.*]{.small}
-- [x] Reglas claras de acceso y licencias [([Inau et al., 2020](https://doi.org/10.2196/22505); [McQuilton et al., 2020](https://doi.org/10.1162/dint_a_00037); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505))]{.small}  
+- [x] D. Reglas claras de acceso y licencias [([Inau et al., 2020](https://doi.org/10.2196/22505); [McQuilton et al., 2020](https://doi.org/10.1162/dint_a_00037); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505))]{.small}  
   [*Ej.: datos abiertos bajo CC BY 4.0 u otras licencias [Creative Commons](https://co.creativecommons.net/tipos-de-licencias/); excepciones documentadas.*]{.small}
-- [x] Uso de formatos abiertos y estructurados [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
+- [x] E. Uso de formatos abiertos y estructurados [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
   [*Ej.: datos tabulares en CSV; metadatos en JSON.*]{.small}
-- [ ] Interoperabilidad semántica (ontologías, vocabularios controlados) [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Stracke & Evans, 2024](https://doi.org/10.1038/s42004-024-01143-0); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505))]{.small}  
+- [ ] F. Interoperabilidad semántica (ontologías, vocabularios controlados) [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Stracke & Evans, 2024](https://doi.org/10.1038/s42004-024-01143-0); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505))]{.small}  
   [*Ej.: "sexo" codificado según una ontología estándar, no como texto libre.*]{.small}
 :::
 
@@ -639,17 +639,17 @@ CSV es:
 ## 2.1 Lista de chequeo FAIR con ejemplos prácticos {auto-animate="true" .unlisted}
 
 ::: {.small-list}
-- [x] [Planificación FAIR desde el diseño del estudio]{auto-animate="true"} [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Martorana et al., 2022](https://doi.org/10.7717/peerj-cs.1038))]{.small}  
+- [x] [A. Planificación FAIR desde el diseño del estudio]{auto-animate="true"} [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Martorana et al., 2022](https://doi.org/10.7717/peerj-cs.1038))]{.small}  
   [*Ej.: estructura de carpetas y esquema de nombres definidos antes de recolectar datos.*]{.small}
-- [X] Metadatos obligatorios y estándares definidos [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
+- [X] B. Metadatos obligatorios y estándares definidos [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
   [*Ej.: README + variables descritas con un esquema tipo [DataCite](https://datacite.org).*]{.small}
-- [x] Identificadores persistentes (DOI para datos, ORCID para autores) [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Stracke & Evans, 2024](https://doi.org/10.1038/s42004-024-01143-0))]{.small}  
+- [x] C. Identificadores persistentes (DOI para datos, ORCID para autores) [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Stracke & Evans, 2024](https://doi.org/10.1038/s42004-024-01143-0))]{.small}  
   [*Ej.: dataset con DOI en [Zenodo](https://zenodo.org)/[OSF](https://osf.io) y autores con [ORCID](https://orcid.org) enlazado.*]{.small}
-- [x] Reglas claras de acceso y licencias [([Inau et al., 2020](https://doi.org/10.2196/22505); [McQuilton et al., 2020](https://doi.org/10.1162/dint_a_00037); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505))]{.small}  
+- [x] D. Reglas claras de acceso y licencias [([Inau et al., 2020](https://doi.org/10.2196/22505); [McQuilton et al., 2020](https://doi.org/10.1162/dint_a_00037); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505))]{.small}  
   [*Ej.: datos abiertos bajo CC BY 4.0 u otras licencias [Creative Commons](https://co.creativecommons.net/tipos-de-licencias/); excepciones documentadas.*]{.small}
-- [x] Uso de formatos abiertos y estructurados [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
+- [x] E. Uso de formatos abiertos y estructurados [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Groth et al., 2020](https://doi.org/10.1162/dint_a_00030); [Wise et al., 2019](https://doi.org/10.1016/j.drudis.2019.01.008))]{.small}  
   [*Ej.: datos tabulares en CSV; metadatos en JSON.*]{.small}
-- [x] Interoperabilidad semántica (ontologías, vocabularios controlados) [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Stracke & Evans, 2024](https://doi.org/10.1038/s42004-024-01143-0); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505))]{.small}  
+- [x] F. Interoperabilidad semántica (ontologías, vocabularios controlados) [([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18); [Stracke & Evans, 2024](https://doi.org/10.1038/s42004-024-01143-0); [Inau et al., 2020](https://doi.org/10.2196/preprints.22505))]{.small}  
   [*Ej.: "sexo" codificado según una ontología estándar, no como texto libre.*]{.small}
 :::
 
